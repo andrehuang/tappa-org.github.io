@@ -5,6 +5,13 @@
 #
 # `url` is where the issue itself lives. Keep the trailing slash.
 
+# Issue 2 is a draft (editors' notes and photo placeholders still on the
+# page). Uncomment on release to make it the current issue.
+# - title: "Issue 2"
+#   date: "Winter 2026"
+#   cover: /magazine/issue-2/cover.jpg
+#   url: /magazine/issue-2/
+
 - title: "Issue 1"
   date: "Summer 2026"
   cover: /magazine/issue-1/cover.jpg

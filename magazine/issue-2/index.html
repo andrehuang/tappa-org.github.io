@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAPPA Quarterly — Issue 02</title>
+<!-- Fonts are served from this origin, not a third-party CDN, so no visitor IP
+     is disclosed to Google. See fonts/OFL-*.txt for the licences. -->
+<link rel="preload" href="fonts/spectral-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Visitor counting — GoatCounter. Sets no cookies and writes nothing to
+     the reader's device, so no § 25 TDDDG consent banner is required; it
+     stores no raw IP address, only a daily-salted hash. Legal basis
+     Art. 6(1)(f) GDPR. Described in the privacy column at the foot of this
+     page — the two must stay in step. -->
+<script src="../../assets/js/goatcounter.js"></script>
+</head>
+<body>
+
+<!-- ============================================================
+     DRAFT. Boxes marked .draft-note are editors' notes and must be
+     removed before release. Every .ph-empty slot is waiting on a
+     real photograph.
+     ============================================================ -->
+
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="mark" href="#top">TAPPA <span>Quarterly</span></a>
+    <nav id="nav">
+      <a href="#editorial">Editorial</a>
+      <a href="#people">People</a>
+      <a href="#numbers">Numbers</a>
+      <a href="#startups">Startups</a>
+      <a href="#research">Research</a>
+      <a href="#fun">Fun</a>
+      <a href="#life">Life</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================ COVER ============================ -->
+  <section class="cover">
+    <svg class="cover-art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#7BE0C0" stroke-width="0.7" opacity="0.22">
+        <circle cx="330" cy="150" r="40"/><circle cx="330" cy="150" r="76"/>
+        <circle cx="330" cy="150" r="112"/><circle cx="330" cy="150" r="148"/>
+        <circle cx="330" cy="150" r="184"/><circle cx="330" cy="150" r="220"/>
+        <circle cx="330" cy="150" r="256"/>
+      </g>
+    </svg>
+    <canvas class="cover-field" id="cover-field" aria-hidden="true"></canvas>
+
+    <div class="cover-top">
+      <span>Issue 02 — Winter 2026</span>
+      <span>tappa-org.github.io</span>
+    </div>
+
+    <div class="lockup-wrap">
+      <span class="brand">TAPPA</span>
+      <span class="quarterly">Quarterly</span>
+      <p class="cover-desc">The magazine of the Tübingen AI PhD &amp; postdoc community — interviews, research, community life and the occasional survey.</p>
+    </div>
+
+    <div class="cover-lead">
+      <div class="cover-lead-inner">
+        <div>
+          <div class="kicker kicker-mint">By the Numbers · Parenthood</div>
+          <h1 class="cover-headline">The Wheel Never Stops</h1>
+          <p class="cover-standfirst">47 of us on children and careers: who wants them, who is waiting, and why almost nobody knows what our workplaces offer.</p>
+          <a class="cover-cta" href="#numbers">Read the survey</a>
+        </div>
+        <div class="teasers">
+          <a class="teaser" href="#startups">
+            <span>
+              <span class="teaser-label">Startups</span>
+              <span class="teaser-title">Inside KE:SAI</span>
+              <span class="teaser-blurb">The non-profit lab that wants to build the Linux of self-driving</span>
+            </span>
+          </a>
+          <a class="teaser" href="#people">
+            <span>
+              <span class="teaser-label">People</span>
+              <span class="teaser-title">Parents in AI</span>
+              <span class="teaser-blurb">Conversations with parents in Tübingen's labs</span>
+            </span>
+          </a>
+          <a class="teaser" href="#life">
+            <span>
+              <span class="teaser-label">Life · Fun</span>
+              <span class="teaser-title">Christmas Markets, Sorted</span>
+              <span class="teaser-blurb">Plus: the winter calendar, and four German words to carry</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CONTENTS ============================ -->
+  <section class="contents">
+    <div class="col">
+      <div class="contents-head">In this issue</div>
+      <ul class="contents-list">
+        <li><a href="#editorial"><span class="n">01</span><span class="t">Editorial</span></a></li>
+        <li><a href="#people"><span class="n">02</span><span class="t">People</span></a></li>
+        <li><a href="#numbers"><span class="n">03</span><span class="t">By the Numbers</span></a></li>
+        <li><a href="#startups"><span class="n">04</span><span class="t">Startups</span></a></li>
+        <li><a href="#research"><span class="n">05</span><span class="t">Research</span></a></li>
+        <li><a href="#fun"><span class="n">06</span><span class="t">Fun</span></a></li>
+        <li><a href="#life"><span class="n">07</span><span class="t">Life</span></a></li>
+        <li><a href="#credits"><span class="n">08</span><span class="t">Masthead &amp; Credits</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ EDITORIAL ============================ -->
+  <section class="chapter" id="editorial">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">01</span>
+        <h2>Editorial</h2>
+        <span class="sub">From the editors</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div class="split split-reverse">
+        <figure class="fig">
+          <div class="ph ph-portrait ph-empty">
+            <span class="ph-empty-label">Photo to come<br>Editorial team, Issue 02</span>
+          </div>
+          <figcaption class="figcaption">
+            <span class="fignum">Figure 1 |</span> The team behind Issue 02.
+          </figcaption>
+        </figure>
+        <div>
+          <h3 class="sub-headline">The Questions We Rarely Ask at Work</h3>
+          <p class="draft-note">Draft editorial, to be finished last (200–300 words). Add a sentence or two on how Issue 01 landed: readers, feedback, what people told us.</p>
+          <p>Welcome back to TAPPAS.</p>
+          <p>This issue is about a question many of us think about and rarely talk about at work: whether, and when, to have children. This autumn we asked, and 47 of you answered. The results are in <a href="#numbers">By the Numbers</a>. Most of us who don't have children would like to. Most of those are waiting. And almost nobody knows what our workplaces actually offer. Alongside the numbers, <a href="#people">People</a> talks to parents in Tübingen's AI labs about what really changes.</p>
+          <p>Elsewhere, we go inside KE:SAI, the non-profit lab that wants to build the Linux of self-driving with no investors, no equity and no patents. FridayTalks rounds up a quarter of talks. And since it is winter, Fynn has sorted the region's Christmas markets so you can pick the right one, and the right night, and Rabanus has the dates.</p>
+          <p>As before, everything here was written, surveyed and photographed by people from our community, and we would love more of you on these pages: a piece, an interview, a photo, a rant. Find us in <strong>#tappas</strong> on Slack, or through the <a href="#feedback">feedback form</a> at the back.</p>
+          <p><em>— Haiwen &amp; Mina, for the editorial team</em></p>
+          <a class="arrow-link" href="#credits">→ Masthead &amp; credits</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PEOPLE ============================ -->
+  <section class="chapter chapter-warm" id="people">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">02</span>
+        <h2>People</h2>
+        <span class="sub">The interview</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div class="split split-wide">
+        <div>
+          <div class="kicker">The Interview</div>
+          <h3 class="feature-headline">Parents in AI</h3>
+          <p class="standfirst">What changes when a PhD student, a postdoc or a group leader becomes a parent? Leave, Kitas, conference travel, the hours that move and the priorities that shift. We asked parents in Tübingen's AI labs.</p>
+          <div class="byline">Interviews by the TAPPAS editors</div>
+        </div>
+        <figure class="fig">
+          <div class="ph ph-portrait ph-empty">
+            <span class="ph-empty-label">Portrait to come</span>
+          </div>
+          <figcaption class="figcaption">
+            <span class="fignum">Figure 2 |</span> [Caption to come.]
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="draft-note">
+        Placeholder. The Parents in AI interviews are still in progress. Text, portraits and pull quotes to come (target 800–1,200 words). Four survey respondents with children said yes to an interview.
+      </div>
+
+      <div class="grid">
+      <div class="feature-body">
+        <p class="placeholder-text">Interview text to come.</p>
+        <p>While the interviews are being written up, the numbers are already in. Nine parents answered our survey, and the people still deciding told us what holds them back. <a class="arrow-link" href="#numbers">→ Read By the Numbers</a></p>
+      </div>
+      <aside class="article-rail">
+        <blockquote class="rail-quote">[Pull quote to come.]</blockquote>
+      </aside>
+      </div>
+
+      <div class="takepart">
+        <div class="takepart-head">
+          <div class="kicker">Take part</div>
+          <h4 class="takepart-title">This is a community magazine, so it needs the community</h4>
+        </div>
+        <ul class="takepart-list">
+          <li>
+            <span class="takepart-n">01</span>
+            <div>
+              <h5>Tell your story</h5>
+              <p>Are you a parent in Tübingen AI and happy to talk, under your name or anonymously? Write to us in <strong data-todo="slack-channel-url">#tappas</strong> on Slack.</p>
+            </div>
+          </li>
+          <li>
+            <span class="takepart-n">02</span>
+            <div>
+              <h5>Nominate someone</h5>
+              <p>Know someone whose work or path deserves a page? Send a name and one sentence.</p>
+            </div>
+          </li>
+          <li>
+            <span class="takepart-n">03</span>
+            <div>
+              <h5>Write something</h5>
+              <p>A piece, an interview, a photo, a rant, a puzzle. Issue&nbsp;#3 has room for all of it.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ BY THE NUMBERS ============================ -->
+  <section class="chapter" id="numbers">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">03</span>
+        <h2>By the Numbers</h2>
+        <span class="sub">One question, answered with data</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <article id="survey">
+      <div class="kicker">Survey · Parenthood and AI careers</div>
+      <h3 class="feature-headline">The Wheel Never Stops</h3>
+      <p class="standfirst">Whether and when to have children is something many of us think about and rarely talk about at work. So we asked, and 47 of you answered. Most of those without children want them. Most of those are waiting. And almost nobody knows what their workplace offers.</p>
+      <div class="byline">By Haiwen Huang &amp; Mina Remeli · <span class="read-time" data-for="survey"></span></div>
+
+      <div class="grid">
+      <div class="feature-body">
+        <p>At the start of November we sent round a short survey, <em>Parenthood and AI Careers</em>. It asked parents what changed and what helped. It asked everyone else whether they want children and what holds them back. And it asked all of us what our workplaces offer, and what this community could do.</p>
+        <p>Forty-seven of you answered: nine parents (one of them expecting), 37 people without children, and one person who preferred not to say. As with the flying survey in Issue&nbsp;01, this is not a representative sample. People who care about the topic are more likely to answer, and nine parents are too few to generalise from. That is why we give counts rather than percentages. But the pattern in the answers is clear enough to be worth reading.</p>
+        <p>Thank you to everyone who took the five minutes, and especially to those who wrote something in the free-text boxes. A selection of those answers closes this piece.</p>
+      </div>
+      <aside class="article-rail">
+        <div class="aside-box">
+          <div class="aside-heading">The survey, in brief</div>
+          <p><strong>47 answers</strong> from the Tübingen AI community, collected between late October and 10 November 2026. Anonymous, voluntary, and not representative. 27 women and 20 men answered.</p>
+          <ul class="minibars">
+              <li class="minibar-row">
+                <span class="minibar-label">PhD student</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:100.0000%"></span></span>
+                <span class="minibar-n">29</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">Postdoc</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:34.4828%"></span></span>
+                <span class="minibar-n">10</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">Group leader / PI</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:6.8966%"></span></span>
+                <span class="minibar-n">2</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">Research engineer / staff</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:6.8966%"></span></span>
+                <span class="minibar-n">2</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">Industry or startup</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:6.8966%"></span></span>
+                <span class="minibar-n">2</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">Bachelor&#x27;s / Master&#x27;s</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:3.4483%"></span></span>
+                <span class="minibar-n">1</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">Not given</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:3.4483%"></span></span>
+                <span class="minibar-n">1</span>
+              </li>
+          </ul>
+        </div>
+      </aside>
+      </div>
+
+      <div class="stats">
+        <div class="stat-tile">
+          <span class="stat-n">32</span>
+          <span class="stat-l">of the 37 without children would like children someday, or might</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-n">28</span>
+          <span class="stat-l">of those 32 say their career has made them postpone, or think about it</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-n">25</span>
+          <span class="stat-l">of 47 rate combining an AI career with children as hard (1 or 2 out of 5)</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-n">36</span>
+          <span class="stat-l">of 47 don't know if contracts can be extended for parents, among them 8 of the 9 parents</span>
+        </div>
+      </div>
+
+      <!-- ---------------- wanting, and waiting ---------------- -->
+      <div class="grid" style="margin-top:34px">
+      <div class="feature-body feature-body-tail">
+        <h4 class="qa-part">Wanting, and waiting</h4>
+        <p>Of the 37 respondents without children, 18 said they would like to have children someday and 14 that they might. Four said no, and three of those four added that their career has nothing to do with it. That is worth saying out loud: not wanting children is a complete answer, not a symptom of a bad job.</p>
+        <p>For the other 32, the career is very much part of it. Seventeen said their academic career has made them postpone, or think about postponing, having children <em>significantly</em>; eleven <em>somewhat</em>. Only one said no.</p>
+        <p>The difference between women and men is one of degree, not direction. Almost everyone who wants children has felt the pull to wait: 18 of 21 women, and 10 of 11 men. But 13 of the 21 women said <em>significantly</em>, against 4 of the 11 men.</p>
+      </div>
+      <aside class="article-rail">
+        <blockquote class="rail-quote">“Right now it looks like the wheel never stops.”
+          <footer class="pullquote-credit">— from the survey's free-text answers</footer>
+        </blockquote>
+      </aside>
+      </div>
+
+      <div class="chart">
+        <div class="chart-head">
+          <span class="chart-num">Figure 3</span>
+          <h4 class="chart-title">Wanting, and waiting</h4>
+          <p class="chart-say">Most respondents without children want them, and nearly all of those say their career has made them wait. Women say “significantly” far more often.</p>
+        </div>
+        <div class="chart-rows">
+        <div class="chart-row">
+          <p class="chart-q">Would you like to have children someday? <span class="chart-n">Respondents without children, n=37</span></p>
+          <p class="chart-key">
+            <span><i class="lv1"></i>Yes</span>
+            <span><i class="lv3"></i>Maybe / undecided</span>
+            <span><i class="lv4"></i>No</span>
+            <span><i class="dk"></i>Prefer not to say</span>
+          </p>
+          <div class="chart-bar" role="img" aria-label="Would you like to have children someday? Of 37 answers — Yes, 18; Maybe / undecided, 14; No, 4; Prefer not to say, 1"><span class="seg lv1" style="--w:48.6486%" title="Yes — 18 of 37"><span class="seg-n">18</span></span><span class="seg lv3" style="--w:37.8378%" title="Maybe / undecided — 14 of 37"><span class="seg-n">14</span></span><span class="seg lv4" style="--w:10.8108%" title="No — 4 of 37"><span class="seg-n">4</span></span><span class="seg dk is-tiny" style="--w:2.7027%" title="Prefer not to say — 1 of 37"><span class="seg-n">1</span></span></div>
+        </div>
+        <div class="chart-panel">
+          <h5 class="chart-panel-head">Has your academic career made you postpone, or think about postponing, having children?</h5>
+          <p class="chart-key">
+            <span><i class="lv1"></i>Yes, significantly</span>
+            <span><i class="lv2"></i>Somewhat</span>
+            <span><i class="lv4"></i>Not sure</span>
+            <span><i class="lv5"></i>No</span>
+          </p>
+          <div class="chart-row chart-row-group">
+            <p class="chart-g">Everyone who wants children or might <span class="chart-n">n=32</span></p>
+            <div class="chart-bar" role="img" aria-label="Has your academic career made you postpone, or think about postponing, having children? Of 32 answers — Yes, significantly, 17; Somewhat, 11; Not sure, 3; No, 1"><span class="seg lv1" style="--w:53.1250%" title="Yes, significantly — 17 of 32"><span class="seg-n">17</span></span><span class="seg lv2" style="--w:34.3750%" title="Somewhat — 11 of 32"><span class="seg-n">11</span></span><span class="seg lv4" style="--w:9.3750%" title="Not sure — 3 of 32"><span class="seg-n">3</span></span><span class="seg lv5 is-tiny" style="--w:3.1250%" title="No — 1 of 32"><span class="seg-n">1</span></span></div>
+          </div>
+          <div class="chart-row chart-row-group">
+            <p class="chart-g">Women <span class="chart-n">n=21</span></p>
+            <div class="chart-bar" role="img" aria-label="Women. Of 21 answers — Yes, significantly, 13; Somewhat, 5; Not sure, 2; No, 1"><span class="seg lv1" style="--w:61.9048%" title="Yes, significantly — 13 of 21"><span class="seg-n">13</span></span><span class="seg lv2" style="--w:23.8095%" title="Somewhat — 5 of 21"><span class="seg-n">5</span></span><span class="seg lv4" style="--w:9.5238%" title="Not sure — 2 of 21"><span class="seg-n">2</span></span><span class="seg lv5 is-tiny" style="--w:4.7619%" title="No — 1 of 21"><span class="seg-n">1</span></span></div>
+          </div>
+          <div class="chart-row chart-row-group">
+            <p class="chart-g">Men <span class="chart-n">n=11</span></p>
+            <div class="chart-bar" role="img" aria-label="Men. Of 11 answers — Yes, significantly, 4; Somewhat, 6; Not sure, 1; No, 0"><span class="seg lv1" style="--w:36.3636%" title="Yes, significantly — 4 of 11"><span class="seg-n">4</span></span><span class="seg lv2" style="--w:54.5455%" title="Somewhat — 6 of 11"><span class="seg-n">6</span></span><span class="seg lv4" style="--w:9.0909%" title="Not sure — 1 of 11"><span class="seg-n">1</span></span></div>
+          </div>
+        </div>
+        </div>
+        <p class="chart-legend chart-legend-foot">Each bar is stretched to the width of its own group, so the women's and men's bars compare shares, not head counts. With 21 and 11 people, a single answer moves a bar by five or nine points.</p>
+      </div>
+
+      <!-- ---------------- what holds us back ---------------- -->
+      <div class="grid" style="margin-top:34px">
+      <div class="feature-body feature-body-tail">
+        <h4 class="qa-part">What holds us back</h4>
+        <p>We asked those 32 to pick their top three concerns. The answers are about the shape of an academic career far more than about babies. Falling behind on publications came first (15 of the 31 who answered), then fixed-term contracts and having to move for the next position (14), and salary (12). Age and biological timing also drew 12, and here the gender gap is wide: 10 of the 20 women who answered picked it, against 2 of the 11 men.</p>
+        <p>One option nobody picked is worth noting. Not a single person chose “how supervisors or colleagues would react”. Finding childcare was picked once, though the parents, as we will see, tell a different story. The worry, in other words, is not the reaction in the room. It is the contract, the CV and the clock.</p>
+      </div>
+      <aside class="article-rail">
+        <blockquote class="rail-quote">“The need to publish and have a good career, so as to have stability and the possibility of having kids — which itself makes the ‘falling behind’ point happen.”
+          <footer class="pullquote-credit">— a concern, in one respondent's own words</footer>
+        </blockquote>
+      </aside>
+      </div>
+
+      <div class="chart">
+        <div class="chart-head">
+          <span class="chart-num">Figure 4</span>
+          <h4 class="chart-title">The contract, the CV and the clock</h4>
+          <p class="chart-say">Biggest concerns, top three picks each. Career structure dominates; age and biological timing is mostly a women's worry; nobody fears the reaction of supervisors or colleagues.</p>
+        </div>
+        <p class="chart-key">
+          <span><i class="lv2"></i>Women (20 answered)</span>
+          <span><i class="lv4"></i>Men (11 answered)</span>
+          <span class="chart-key-note">Bars out of all 31 who answered</span>
+        </p>
+        <div class="rank-rows">
+          <div class="rank-row">
+            <span class="rank-label">Falling behind on publications and career progression</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Falling behind on publications and career progression: picked by 15 of 31 — 11 women, 4 men"><span class="seg lv2" style="--w:35.4839%" title="Falling behind on publications and career progression: Women — 11 of 31"><span class="seg-n">11</span></span><span class="seg lv4" style="--w:12.9032%" title="Falling behind on publications and career progression: Men — 4 of 31"><span class="seg-n">4</span></span></div>
+            <span class="rank-n">15</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Fixed-term contracts and having to move for the next position</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Fixed-term contracts and having to move for the next position: picked by 14 of 31 — 10 women, 4 men"><span class="seg lv2" style="--w:32.2581%" title="Fixed-term contracts and having to move for the next position: Women — 10 of 31"><span class="seg-n">10</span></span><span class="seg lv4" style="--w:12.9032%" title="Fixed-term contracts and having to move for the next position: Men — 4 of 31"><span class="seg-n">4</span></span></div>
+            <span class="rank-n">14</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Age and biological timing</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Age and biological timing: picked by 12 of 31 — 10 women, 2 men"><span class="seg lv2" style="--w:32.2581%" title="Age and biological timing: Women — 10 of 31"><span class="seg-n">10</span></span><span class="seg lv4" style="--w:6.4516%" title="Age and biological timing: Men — 2 of 31"><span class="seg-n">2</span></span></div>
+            <span class="rank-n">12</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Salary and finances</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Salary and finances: picked by 12 of 31 — 6 women, 6 men"><span class="seg lv2" style="--w:19.3548%" title="Salary and finances: Women — 6 of 31"><span class="seg-n">6</span></span><span class="seg lv4" style="--w:19.3548%" title="Salary and finances: Men — 6 of 31"><span class="seg-n">6</span></span></div>
+            <span class="rank-n">12</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Not feeling personally ready</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Not feeling personally ready: picked by 8 of 31 — 5 women, 3 men"><span class="seg lv2" style="--w:16.1290%" title="Not feeling personally ready: Women — 5 of 31"><span class="seg-n">5</span></span><span class="seg lv4" style="--w:9.6774%" title="Not feeling personally ready: Men — 3 of 31"><span class="seg-n">3</span></span></div>
+            <span class="rank-n">8</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Living far from my own family</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Living far from my own family: picked by 6 of 31 — 4 women, 2 men"><span class="seg lv2" style="--w:12.9032%" title="Living far from my own family: Women — 4 of 31"><span class="seg-n">4</span></span><span class="seg lv4" style="--w:6.4516%" title="Living far from my own family: Men — 2 of 31"><span class="seg-n">2</span></span></div>
+            <span class="rank-n">6</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Long hours, deadlines and conference travel</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Long hours, deadlines and conference travel: picked by 6 of 31 — 3 women, 3 men"><span class="seg lv2" style="--w:9.6774%" title="Long hours, deadlines and conference travel: Women — 3 of 31"><span class="seg-n">3</span></span><span class="seg lv4" style="--w:9.6774%" title="Long hours, deadlines and conference travel: Men — 3 of 31"><span class="seg-n">3</span></span></div>
+            <span class="rank-n">6</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Coordinating with my partner&#x27;s career</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Coordinating with my partner&#x27;s career: picked by 6 of 31 — 3 women, 3 men"><span class="seg lv2" style="--w:9.6774%" title="Coordinating with my partner&#x27;s career: Women — 3 of 31"><span class="seg-n">3</span></span><span class="seg lv4" style="--w:9.6774%" title="Coordinating with my partner&#x27;s career: Men — 3 of 31"><span class="seg-n">3</span></span></div>
+            <span class="rank-n">6</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Housing in Tübingen</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Housing in Tübingen: picked by 2 of 31 — 1 women, 1 men"><span class="seg lv2 is-tiny" style="--w:3.2258%" title="Housing in Tübingen: Women — 1 of 31"><span class="seg-n">1</span></span><span class="seg lv4 is-tiny" style="--w:3.2258%" title="Housing in Tübingen: Men — 1 of 31"><span class="seg-n">1</span></span></div>
+            <span class="rank-n">2</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Something else, in their own words</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Something else, in their own words: picked by 2 of 31 — 2 women, 0 men"><span class="seg lv2" style="--w:6.4516%" title="Something else, in their own words: Women — 2 of 31"><span class="seg-n">2</span></span></div>
+            <span class="rank-n">2</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Finding childcare (Kita)</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Finding childcare (Kita): picked by 1 of 31 — 1 women, 0 men"><span class="seg lv2 is-tiny" style="--w:3.2258%" title="Finding childcare (Kita): Women — 1 of 31"><span class="seg-n">1</span></span></div>
+            <span class="rank-n">1</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">How supervisors or colleagues would react</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="How supervisors or colleagues would react: picked by 0 of 31 — 0 women, 0 men"></div>
+            <span class="rank-n">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------- parents ---------------- -->
+      <div class="grid" style="margin-top:34px">
+      <div class="feature-body feature-body-tail">
+        <h4 class="qa-part">What the parents told us</h4>
+        <p>Nine respondents are parents or expecting. Four became parents during their PhD, three as postdocs (one of them is still expecting) and two outside academia. For their most recent child they took, or plan to take, anything from no time off to a year: one took no leave, two less than two months, three between two and six months, and three between six and twelve.</p>
+        <p>Asked how supported they felt, the parents gave their supervisors and colleagues mostly good marks; five felt “very” supported by their supervisor. Their institutions got a lukewarm “fairly” from seven of the nine. Childcare split the group: four felt very supported by it, two only a little or not at all. One parent wrote that on-site and emergency childcare is “not really existent”.</p>
+        <p>And almost everything changed. Seven parents answered our checklist of what has changed since becoming a parent (one answered an earlier version of the form, and one is still expecting). All seven ticked when and how they organise their work, and how much they travel to conferences. Six ticked how many hours they work and what they prioritise. Four ticked their career plans, including whether to stay in academia. Nobody ticked “nothing major has changed”.</p>
+      </div>
+      <aside class="article-rail">
+        <div class="aside-box">
+          <div class="aside-heading">What changed, for 7 parents</div>
+          <ul class="minibars">
+              <li class="minibar-row">
+                <span class="minibar-label">When and how I organise my work</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:100.0000%"></span></span>
+                <span class="minibar-n">7</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">How much I travel for conferences</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:100.0000%"></span></span>
+                <span class="minibar-n">7</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">How many hours I work</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:85.7143%"></span></span>
+                <span class="minibar-n">6</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">What I prioritise</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:85.7143%"></span></span>
+                <span class="minibar-n">6</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">How I think about the future</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:71.4286%"></span></span>
+                <span class="minibar-n">5</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">My career plans</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:57.1429%"></span></span>
+                <span class="minibar-n">4</span>
+              </li>
+              <li class="minibar-row">
+                <span class="minibar-label">Nothing major</span>
+                <span class="minibar-track"><span class="minibar-fill" style="--w:0.0000%"></span></span>
+                <span class="minibar-n">0</span>
+              </li>
+          </ul>
+        </div>
+        <div class="aside-box">
+          <div class="aside-heading">What helped</div>
+          <p>“Having a good midwife and birth preparation classes. Also I would recommend to reconnect with friends, family and neighbours if possible, as they provide surprisingly much help. We received many gifts of time, clothing and money.”</p>
+          <p class="aside-credit">— a parent</p>
+        </div>
+      </aside>
+      </div>
+
+      <div class="chart">
+        <div class="chart-head">
+          <span class="chart-num">Figure 5</span>
+          <h4 class="chart-title">How supported parents felt</h4>
+          <p class="chart-say">Supervisors and family get the warmest marks, institutions a polite “fairly”, and childcare splits the group.</p>
+        </div>
+        <p class="chart-legend">
+          <span class="chart-ramp" aria-hidden="true"><i class="lv1"></i><i class="lv2"></i><i class="lv3"></i><i class="lv4"></i></span>
+          Not at all · a little · fairly · very. Nine parents and expecting parents.
+        </p>
+        <div class="chart-rows">
+        <div class="chart-row chart-row-scale">
+          <p class="chart-q">Your supervisor / PI</p>
+          <div class="chart-scale">
+            <span class="chart-anchor">Not at all</span>
+            <div class="chart-bar" role="img" aria-label="How supported did you feel by: Your supervisor / PI? Of 9 answers — Not at all, 0; A little, 1; Fairly, 3; Very, 5"><span class="seg lv2" style="--w:11.1111%" title="A little — 1 of 9"><span class="seg-n">1</span></span><span class="seg lv3" style="--w:33.3333%" title="Fairly — 3 of 9"><span class="seg-n">3</span></span><span class="seg lv4" style="--w:55.5556%" title="Very — 5 of 9"><span class="seg-n">5</span></span></div>
+            <span class="chart-anchor chart-anchor-hi">Very</span>
+          </div>
+        </div>
+        <div class="chart-row chart-row-scale">
+          <p class="chart-q">Colleagues and group</p>
+          <div class="chart-scale">
+            <span class="chart-anchor">Not at all</span>
+            <div class="chart-bar" role="img" aria-label="How supported did you feel by: Colleagues and group? Of 9 answers — Not at all, 1; A little, 0; Fairly, 4; Very, 4"><span class="seg lv1" style="--w:11.1111%" title="Not at all — 1 of 9"><span class="seg-n">1</span></span><span class="seg lv3" style="--w:44.4444%" title="Fairly — 4 of 9"><span class="seg-n">4</span></span><span class="seg lv4" style="--w:44.4444%" title="Very — 4 of 9"><span class="seg-n">4</span></span></div>
+            <span class="chart-anchor chart-anchor-hi">Very</span>
+          </div>
+        </div>
+        <div class="chart-row chart-row-scale">
+          <p class="chart-q">Your institution (policies, facilities)</p>
+          <div class="chart-scale">
+            <span class="chart-anchor">Not at all</span>
+            <div class="chart-bar" role="img" aria-label="How supported did you feel by: Your institution (policies, facilities)? Of 9 answers — Not at all, 0; A little, 1; Fairly, 7; Very, 1"><span class="seg lv2" style="--w:11.1111%" title="A little — 1 of 9"><span class="seg-n">1</span></span><span class="seg lv3" style="--w:77.7778%" title="Fairly — 7 of 9"><span class="seg-n">7</span></span><span class="seg lv4" style="--w:11.1111%" title="Very — 1 of 9"><span class="seg-n">1</span></span></div>
+            <span class="chart-anchor chart-anchor-hi">Very</span>
+          </div>
+        </div>
+        <div class="chart-row chart-row-scale">
+          <p class="chart-q">Childcare (Kita, nanny, school care)</p>
+          <div class="chart-scale">
+            <span class="chart-anchor">Not at all</span>
+            <div class="chart-bar" role="img" aria-label="How supported did you feel by: Childcare (Kita, nanny, school care)? Of 9 answers — Not at all, 1; A little, 1; Fairly, 3; Very, 4"><span class="seg lv1" style="--w:11.1111%" title="Not at all — 1 of 9"><span class="seg-n">1</span></span><span class="seg lv2" style="--w:11.1111%" title="A little — 1 of 9"><span class="seg-n">1</span></span><span class="seg lv3" style="--w:33.3333%" title="Fairly — 3 of 9"><span class="seg-n">3</span></span><span class="seg lv4" style="--w:44.4444%" title="Very — 4 of 9"><span class="seg-n">4</span></span></div>
+            <span class="chart-anchor chart-anchor-hi">Very</span>
+          </div>
+        </div>
+        <div class="chart-row chart-row-scale">
+          <p class="chart-q">Family and friends</p>
+          <div class="chart-scale">
+            <span class="chart-anchor">Not at all</span>
+            <div class="chart-bar" role="img" aria-label="How supported did you feel by: Family and friends? Of 9 answers — Not at all, 0; A little, 0; Fairly, 5; Very, 4"><span class="seg lv3" style="--w:55.5556%" title="Fairly — 5 of 9"><span class="seg-n">5</span></span><span class="seg lv4" style="--w:44.4444%" title="Very — 4 of 9"><span class="seg-n">4</span></span></div>
+            <span class="chart-anchor chart-anchor-hi">Very</span>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- ---------------- don't know ---------------- -->
+      <div class="grid" style="margin-top:34px">
+      <div class="feature-body feature-body-tail">
+        <h4 class="qa-part">The most common answer: “Don't know”</h4>
+        <p>We asked everyone whether, as far as they know, their workplace offers five kinds of support. Only one is widely known: 32 of 47 said they can get flexible hours or remote work. For everything else “don't know” dominated: 25 for Kita places, 31 for a family office or contact point, 35 for emergency childcare, and 36 for contract extensions. Eight people answered “don't know” to all five.</p>
+        <p>Part of this is structural. Tübingen's AI community works for many employers (the university, Max Planck, ELLIS, Hertie, companies), each with its own offers, which is also why the same question drew both “yes” and “no”: eleven of each for Kita places. But it is not just newcomers who don't know. Eight of the nine parents did not know whether fixed-term contracts can be extended for parents. That is the question with the most at stake, for a community in which almost everyone is on a fixed-term contract.</p>
+      </div>
+      <aside class="article-rail">
+        <div class="aside-box aside-box-ink">
+          <div class="aside-heading">Worth asking about</div>
+          <!-- TODO editors: have HR or a family office check this paragraph before release. -->
+          <p>For many fixed-term research contracts in Germany, the law (the <em>Wissenschaftszeitvertragsgesetz</em>, WissZeitVG) provides for the contract to be extended by periods of parental leave and maternity protection, and raises the maximum fixed-term period for people caring for children by two years per child.</p>
+          <p>Whether and how that applies to <em>your</em> contract (university, Max Planck, third-party funding or a stipend) is a question for your HR department or family office. It is also exactly what the guide below should answer.</p>
+        </div>
+      </aside>
+      </div>
+
+      <div class="chart">
+        <div class="chart-head">
+          <span class="chart-num">Figure 6</span>
+          <h4 class="chart-title">As far as you know, does your workplace offer…</h4>
+          <p class="chart-say">Flexible hours are common knowledge. For everything else, most of us simply don't know.</p>
+        </div>
+        <p class="chart-key">
+          <span><i class="lv2"></i>Yes</span>
+          <span><i class="lv4"></i>No</span>
+          <span><i class="dk"></i>Don't know</span>
+          <span class="chart-key-note">All 47 respondents</span>
+        </p>
+        <div class="chart-rows">
+        <div class="chart-row">
+          <p class="chart-q">Flexible hours or remote work for parents</p>
+          <div class="chart-bar" role="img" aria-label="Flexible hours or remote work for parents. Of 47 answers — Yes, 32; No, 2; Don&#x27;t know, 13"><span class="seg lv2" style="--w:68.0851%" title="Yes — 32 of 47"><span class="seg-n">32</span></span><span class="seg lv4 is-tiny" style="--w:4.2553%" title="No — 2 of 47"><span class="seg-n">2</span></span><span class="seg dk" style="--w:27.6596%" title="Don&#x27;t know — 13 of 47"><span class="seg-n">13</span></span></div>
+        </div>
+        <div class="chart-row">
+          <p class="chart-q">On-site or partner childcare (Kita places)</p>
+          <div class="chart-bar" role="img" aria-label="On-site or partner childcare (Kita places). Of 47 answers — Yes, 11; No, 11; Don&#x27;t know, 25"><span class="seg lv2" style="--w:23.4043%" title="Yes — 11 of 47"><span class="seg-n">11</span></span><span class="seg lv4" style="--w:23.4043%" title="No — 11 of 47"><span class="seg-n">11</span></span><span class="seg dk" style="--w:53.1915%" title="Don&#x27;t know — 25 of 47"><span class="seg-n">25</span></span></div>
+        </div>
+        <div class="chart-row">
+          <p class="chart-q">A contact point for family matters (family office or service)</p>
+          <div class="chart-bar" role="img" aria-label="A contact point for family matters (family office or service). Of 47 answers — Yes, 12; No, 4; Don&#x27;t know, 31"><span class="seg lv2" style="--w:25.5319%" title="Yes — 12 of 47"><span class="seg-n">12</span></span><span class="seg lv4" style="--w:8.5106%" title="No — 4 of 47"><span class="seg-n">4</span></span><span class="seg dk" style="--w:65.9574%" title="Don&#x27;t know — 31 of 47"><span class="seg-n">31</span></span></div>
+        </div>
+        <div class="chart-row">
+          <p class="chart-q">Emergency or backup childcare</p>
+          <div class="chart-bar" role="img" aria-label="Emergency or backup childcare. Of 47 answers — Yes, 2; No, 10; Don&#x27;t know, 35"><span class="seg lv2 is-tiny" style="--w:4.2553%" title="Yes — 2 of 47"><span class="seg-n">2</span></span><span class="seg lv4" style="--w:21.2766%" title="No — 10 of 47"><span class="seg-n">10</span></span><span class="seg dk" style="--w:74.4681%" title="Don&#x27;t know — 35 of 47"><span class="seg-n">35</span></span></div>
+        </div>
+        <div class="chart-row">
+          <p class="chart-q">Contract extensions for parents on fixed-term contracts</p>
+          <div class="chart-bar" role="img" aria-label="Contract extensions for parents on fixed-term contracts. Of 47 answers — Yes, 9; No, 2; Don&#x27;t know, 36"><span class="seg lv2" style="--w:19.1489%" title="Yes — 9 of 47"><span class="seg-n">9</span></span><span class="seg lv4 is-tiny" style="--w:4.2553%" title="No — 2 of 47"><span class="seg-n">2</span></span><span class="seg dk" style="--w:76.5957%" title="Don&#x27;t know — 36 of 47"><span class="seg-n">36</span></span></div>
+        </div>
+        </div>
+      </div>
+
+      <!-- ---------------- manageable ---------------- -->
+      <div class="grid" style="margin-top:34px">
+      <div class="feature-body feature-body-tail">
+        <h4 class="qa-part">From where you stand</h4>
+        <p>Finally, we asked everyone how manageable it seems to combine an academic career in AI with raising children, from 1 (“very hard”) to 5 (“very manageable”). Twenty-five of the 47 chose 1 or 2, and nine chose 4 or 5. Only one person chose 5, and that person is a parent.</p>
+        <p>On average the parents were a little more optimistic than everyone else: 2.9 against 2.3, if one is allowed to average a five-point scale. With nine parents, that difference could easily be noise.</p>
+      </div>
+      </div>
+
+      <div class="chart">
+        <div class="chart-head">
+          <span class="chart-num">Figure 7</span>
+          <h4 class="chart-title">How manageable does it look?</h4>
+          <p class="chart-say">More than half of us lean towards “very hard”. The parents lean slightly less.</p>
+        </div>
+        <p class="chart-legend">
+          <span class="chart-ramp" aria-hidden="true"><i class="lv1"></i><i class="lv2"></i><i class="lv3"></i><i class="lv4"></i><i class="lv5"></i></span>
+          Five steps, dark to pale, from “very hard” to “very manageable”. Each bar is stretched to the width of its own group.
+        </p>
+        <div class="chart-rows">
+        <div class="chart-row chart-row-scale">
+          <p class="chart-q">Everyone <span class="chart-n">n=47</span></p>
+          <div class="chart-scale">
+            <span class="chart-anchor">Very hard</span>
+            <div class="chart-bar" role="img" aria-label="How manageable does it seem to combine an academic career in AI with raising children? Everyone. Of 47 answers — 1 of 5 (very hard), 12; 2 of 5, 13; 3 of 5, 13; 4 of 5, 8; 5 of 5 (very manageable), 1"><span class="seg lv1" style="--w:25.5319%" title="1 of 5 (very hard) — 12 of 47"><span class="seg-n">12</span></span><span class="seg lv2" style="--w:27.6596%" title="2 of 5 — 13 of 47"><span class="seg-n">13</span></span><span class="seg lv3" style="--w:27.6596%" title="3 of 5 — 13 of 47"><span class="seg-n">13</span></span><span class="seg lv4" style="--w:17.0213%" title="4 of 5 — 8 of 47"><span class="seg-n">8</span></span><span class="seg lv5 is-tiny" style="--w:2.1277%" title="5 of 5 (very manageable) — 1 of 47"><span class="seg-n">1</span></span></div>
+            <span class="chart-anchor chart-anchor-hi">Very manageable</span>
+          </div>
+        </div>
+        <div class="chart-row chart-row-scale">
+          <p class="chart-q">Without children <span class="chart-n">n=37</span></p>
+          <div class="chart-scale">
+            <span class="chart-anchor">Very hard</span>
+            <div class="chart-bar" role="img" aria-label="How manageable does it seem to combine an academic career in AI with raising children? Without children. Of 37 answers — 1 of 5 (very hard), 10; 2 of 5, 11; 3 of 5, 10; 4 of 5, 6; 5 of 5 (very manageable), 0"><span class="seg lv1" style="--w:27.0270%" title="1 of 5 (very hard) — 10 of 37"><span class="seg-n">10</span></span><span class="seg lv2" style="--w:29.7297%" title="2 of 5 — 11 of 37"><span class="seg-n">11</span></span><span class="seg lv3" style="--w:27.0270%" title="3 of 5 — 10 of 37"><span class="seg-n">10</span></span><span class="seg lv4" style="--w:16.2162%" title="4 of 5 — 6 of 37"><span class="seg-n">6</span></span></div>
+            <span class="chart-anchor chart-anchor-hi">Very manageable</span>
+          </div>
+        </div>
+        <div class="chart-row chart-row-scale">
+          <p class="chart-q">Parents and expecting <span class="chart-n">n=9</span></p>
+          <div class="chart-scale">
+            <span class="chart-anchor">Very hard</span>
+            <div class="chart-bar" role="img" aria-label="How manageable does it seem to combine an academic career in AI with raising children? Parents and expecting. Of 9 answers — 1 of 5 (very hard), 2; 2 of 5, 1; 3 of 5, 3; 4 of 5, 2; 5 of 5 (very manageable), 1"><span class="seg lv1" style="--w:22.2222%" title="1 of 5 (very hard) — 2 of 9"><span class="seg-n">2</span></span><span class="seg lv2" style="--w:11.1111%" title="2 of 5 — 1 of 9"><span class="seg-n">1</span></span><span class="seg lv3" style="--w:33.3333%" title="3 of 5 — 3 of 9"><span class="seg-n">3</span></span><span class="seg lv4" style="--w:22.2222%" title="4 of 5 — 2 of 9"><span class="seg-n">2</span></span><span class="seg lv5" style="--w:11.1111%" title="5 of 5 (very manageable) — 1 of 9"><span class="seg-n">1</span></span></div>
+            <span class="chart-anchor chart-anchor-hi">Very manageable</span>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- ---------------- what would help ---------------- -->
+      <div class="grid" style="margin-top:34px">
+      <div class="feature-body feature-body-tail">
+        <h4 class="qa-part">What would help</h4>
+        <p>What could the Tübingen AI community do? Nobody chose “nothing needed”. The clear favourite was the most practical one: a guide to Kita, Elterngeld, contracts and paperwork, picked by 29 of the 41 who answered. Next came a babysitting or childcare-sharing network (23) and family-friendly events held in the daytime, with kids welcome (20). A parents' meetup or Slack channel got six votes, half of them from parents, who are the people it would be for.</p>
+      </div>
+      </div>
+
+      <div class="chart">
+        <div class="chart-head">
+          <span class="chart-num">Figure 8</span>
+          <h4 class="chart-title">What the community could do</h4>
+          <p class="chart-say">Select all that apply; 41 answered. A practical guide comes first by a distance.</p>
+        </div>
+        <div class="rank-rows">
+          <div class="rank-row">
+            <span class="rank-label">A practical guide: Kita, Elterngeld, contracts, paperwork</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="A practical guide: Kita, Elterngeld, contracts, paperwork: 29 of 41"><span class="seg lv2" style="--w:70.7317%" title="A practical guide: Kita, Elterngeld, contracts, paperwork — 29 of 41"><span class="seg-n"></span></span></div>
+            <span class="rank-n">29</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">A babysitting or childcare-sharing network</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="A babysitting or childcare-sharing network: 23 of 41"><span class="seg lv2" style="--w:56.0976%" title="A babysitting or childcare-sharing network — 23 of 41"><span class="seg-n"></span></span></div>
+            <span class="rank-n">23</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Family-friendly events (daytime, kids welcome)</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Family-friendly events (daytime, kids welcome): 20 of 41"><span class="seg lv2" style="--w:48.7805%" title="Family-friendly events (daytime, kids welcome) — 20 of 41"><span class="seg-n"></span></span></div>
+            <span class="rank-n">20</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Conversations between parents and people considering it</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Conversations between parents and people considering it: 13 of 41"><span class="seg lv2" style="--w:31.7073%" title="Conversations between parents and people considering it — 13 of 41"><span class="seg-n"></span></span></div>
+            <span class="rank-n">13</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">More stories like this in TAPPAS</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="More stories like this in TAPPAS: 12 of 41"><span class="seg lv2" style="--w:29.2683%" title="More stories like this in TAPPAS — 12 of 41"><span class="seg-n"></span></span></div>
+            <span class="rank-n">12</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">A parents&#x27; meetup or Slack channel</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="A parents&#x27; meetup or Slack channel: 6 of 41"><span class="seg lv2" style="--w:14.6341%" title="A parents&#x27; meetup or Slack channel — 6 of 41"><span class="seg-n"></span></span></div>
+            <span class="rank-n">6</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Something else, in their own words</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Something else, in their own words: 5 of 41"><span class="seg lv2" style="--w:12.1951%" title="Something else, in their own words — 5 of 41"><span class="seg-n"></span></span></div>
+            <span class="rank-n">5</span>
+          </div>
+          <div class="rank-row">
+            <span class="rank-label">Nothing needed</span>
+            <div class="chart-bar chart-bar-thin" role="img" aria-label="Nothing needed: 0 of 41"></div>
+            <span class="rank-n">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------- free text ---------------- -->
+      <div class="feature-body feature-body-tail" style="margin-top:34px">
+        <p>We also asked for one piece of advice, or one question, about parenthood and an academic career. Here is a selection, sorted into four threads. We have lightly corrected spelling, and we do not say who wrote what.</p>
+      </div>
+
+      <div class="survey-quote-groups">
+
+        <section class="quote-group">
+          <h4 class="quote-group-head"><span class="quote-group-n">01</span> When is the right time?</h4>
+          <p class="quote-group-say">The question asked most often has no good answer. One parent answered it anyway.</p>
+          <div class="survey-quotes">
+            <blockquote><p>“Is there a <strong>best time point to have kids</strong> in an academic career, or not really?”</p></blockquote>
+            <blockquote><p>“I'd love to know when in the academic path is best to have kids. Cause right now it looks like <strong>the wheel never stops</strong>.”</p></blockquote>
+            <blockquote><p>“<strong>Be brave!</strong> Not all of your plans will work out, but <strong>delaying plans and goals indefinitely for ‘when the time will be right’ is the most likely way of never realizing them</strong>. You can't necessarily control whether you'll get that professorship or tenure, and you can't control what you'll experience along the way, but you can decide whether to become a parent and when — and <strong>kids will teach you more flexibility than academia ever could!</strong>”</p></blockquote>
+          </div>
+        </section>
+
+        <section class="quote-group">
+          <h4 class="quote-group-head"><span class="quote-group-n">02</span> Fix the structure</h4>
+          <p class="quote-group-say">Several answers rejected the premise that a meetup could solve this. They asked for money, contracts and childcare instead.</p>
+          <div class="survey-quotes">
+            <blockquote><p>“Are you kidding me with these options?! <strong>More money and less stress and uncertainty is the only real answer.</strong>”</p></blockquote>
+            <blockquote><p>“Better salaries and contract conditions? An academic career is not a joke, and <strong>a PhD ‘student’ is only a ‘student’ on paper</strong>. We work at, and in many cases above, the level of experts in industry. I think it's high time that higher institutions stop treating early-career academics as free(-ish) labour.”</p></blockquote>
+            <blockquote><p>“<strong>On-site and emergency childcare is not really existent</strong> / long procedure / hard to come by. If the AI Center cares about retaining or getting more primary caregivers in research positions, <strong>they should make arrangements about childcare</strong>.”</p></blockquote>
+            <blockquote><p>“<strong>Pay for social freezing.</strong>”</p></blockquote>
+          </div>
+        </section>
+
+        <section class="quote-group">
+          <h4 class="quote-group-head"><span class="quote-group-n">03</span> Not the same for everyone</h4>
+          <p class="quote-group-say">The gender gap in the numbers above did not go unnoticed by the people living it.</p>
+          <div class="survey-quotes">
+            <blockquote><p>“There have been studies that male professors profit from having children (they might seem more approachable), while female professors get penalized for it (they don't have time for work anymore). It would be interesting to understand whether this also happens at an earlier level. For example, <strong>I know several male colleagues who have or are having kids, but none of my female colleagues have kids. Why do the women decide to postpone while the men don't?</strong>”</p></blockquote>
+            <blockquote><p>“Being a woman and wanting to have kids, <strong>I would love to know what women with kids in academia did to balance it</strong> and the work, as usually the mother has more responsibilities, or feels more responsible.”</p></blockquote>
+            <blockquote><p>“<strong>How can I best deal with the expected loss in performance?</strong>”</p></blockquote>
+          </div>
+        </section>
+
+        <section class="quote-group">
+          <h4 class="quote-group-head"><span class="quote-group-n">04</span> And what we didn't ask</h4>
+          <p class="quote-group-say">One answer pointed out that infertility and fertility treatment are almost never part of this conversation. Others reminded us that not everyone wants children, and that is fine.</p>
+          <div class="survey-quotes">
+            <blockquote><p>“Factor in that <strong>the decision to have kids and ultimately being able to have kids are two separate things</strong>. Ideally, academic structures would support both founding a family and employees who are facing uncertainty about whether they could or will become parents.”</p></blockquote>
+            <blockquote><p>“Doing two things that are terribly time-consuming and require you to commit your life to them is probably hard to do.”</p></blockquote>
+            <blockquote><p>“No advice or question, but thank you for considering this topic. This is a non-trivial and very important (for many) topic. <strong>And thank you for being respectful of those who may not want children, too!</strong>”</p></blockquote>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="takepart">
+        <div class="takepart-head">
+          <div class="kicker">What happens next</div>
+          <h4 class="takepart-title">You asked for it. Help us build it.</h4>
+        </div>
+        <ul class="takepart-list">
+          <li>
+            <span class="takepart-n">01</span>
+            <div>
+              <h5>A practical guide</h5>
+              <p>29 of you asked for one: Kita, Elterngeld, contracts and paperwork, per employer. If you have been through it, you know more than any website. Tell us in <strong data-todo="slack-channel-url">#tappas</strong>.</p>
+            </div>
+          </li>
+          <li>
+            <span class="takepart-n">02</span>
+            <div>
+              <h5>Parents, in their own words</h5>
+              <p>Our conversations with parents in Tübingen's AI labs are in the <a href="#people">People</a> section of this issue.</p>
+            </div>
+          </li>
+          <li>
+            <span class="takepart-n">03</span>
+            <div>
+              <h5>Ask the people who decide</h5>
+              <p>Contract extensions, emergency childcare, a family office: if you don't know whether your employer offers them, ask. The answer is useful to the next person too.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <p class="method-note"><strong>About the data.</strong> The survey ran as an anonymous Tally form. Most of the 49 submissions arrived after the call went out on 2 November; the last came in on 10 November. We removed two early entries from before the launch: one left every question after the first page blank, and one was superseded by a later, complete submission from the same respondent. That leaves 47. The form routed people to different pages: parents, people without children, and everyone. So the number answering each question differs, and is given with each figure. Survey design and analysis: Haiwen Huang &amp; Mina Remeli.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================ STARTUPS ============================ -->
+  <section class="chapter chapter-warm" id="startups">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">04</span>
+        <h2>Startups</h2>
+        <span class="sub">New ventures out of the Tübingen AI community</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <article id="kesai">
+      <div class="split split-wide">
+        <div>
+          <div class="kicker">Inside · Non-profit lab</div>
+          <h3 class="feature-headline">Inside KE:SAI</h3>
+          <p class="standfirst">No investors, no equity, no patents. Tübingen's newest AI lab is trying to reach the frontier of self-driving with a fortieth of the data, and to give away everything it builds.</p>
+          <div class="byline">Interview by Haiwen Huang · <span class="read-time" data-for="kesai"></span></div>
+        </div>
+        <figure class="fig">
+          <div class="ph ph-4-3 ph-empty">
+            <span class="ph-empty-label">Photo to come<br>The KE:SAI research vehicle, or the founders</span>
+          </div>
+          <figcaption class="figcaption">
+            <span class="fignum">Figure 9 |</span> [Caption to come.]
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="draft-note">First cut, about 2,100 words, down from about 3,700 in the Notion draft (tracker target: 800–1,200). Every theme is kept, with answers trimmed and some merged; wording stays the interviewees' own except for joins. Needs Andreas's sign-off before release, and a “how to get involved” box at the end.</p>
+
+      <div class="grid">
+      <div class="feature-body">
+        <p>KE:SAI (Kyutai ELLIS Scalable Autonomous Intelligence) builds world models, simulation and self-driving policies, and releases them openly. It is funded by donations; there is no equity in it and nothing to sell.</p>
+        <p>Over the summer I interviewed three of its founders separately. <strong>Andreas Geiger</strong> holds the chair for Autonomous Vision at the University of Tübingen and is on leave to serve as CEO. <strong>Kashyap Chitta</strong> did his PhD in the same group, spent a year at NVIDIA's autonomous-driving research group and returned as CTO. <strong>Bernhard Jaeger</strong> finished his PhD this year. Their answers are grouped by theme below.</p>
+      </div>
+      <aside class="article-rail">
+        <div class="aside-box">
+          <div class="aside-heading">KE:SAI in brief</div>
+          <dl class="brief">
+            <dt>Announced</dt><dd>20 May 2026, a partnership of <a href="https://kyutai.org/" target="_blank" rel="noopener noreferrer">kyutai</a> (Paris) and ELLIS Tübingen</dd>
+            <dt>Legal form</dt><dd>Non-profit research institute, donation-funded; no equity, no investors, no patents</dd>
+            <dt>Sites</dt><dd>Tübingen and Paris</dd>
+            <dt>Founders</dt><dd>Andreas Geiger (CEO), Kashyap Chitta (CTO), Bernhard Schölkopf, Bernhard Jaeger and Daniel Dauner</dd>
+            <dt>Focus</dt><dd>Physical AI: world models, simulation, end-to-end driving policies, released openly</dd>
+            <dt>Compute</dt><dd>About 200 GPUs, a mix of Hopper and Blackwell</dd>
+          </dl>
+        </div>
+      </aside>
+      </div>
+
+      <blockquote class="pullquote">
+        <p>“We believe something like the Linux of self-driving has to be established.”</p>
+      </blockquote>
+
+      <div class="grid">
+      <div class="feature-body">
+        <h4 class="qa-part">The mission</h4>
+        <p class="qa-q">What gap is KE:SAI trying to fill?</p>
+        <p><strong>Geiger:</strong> In our field there's academic research, and there's frontier-AI-lab research, and there's very little connection in between. The frontier is driven primarily by a few siloed labs, and as the labs get bigger, they become less and less open. I'm fundamentally convinced that to solve these really challenging problems, we need the whole community. And in Europe we have the additional problem that we are behind. The European economy becomes more and more dependent on external AI suppliers from China and the US, despite the fact that we have the talent in Europe.</p>
+        <p>Look at the most popular operating system today: it thrived through the open-source community. So we believe something like the Linux of self-driving has to be established. There's Autoware, and there's comma.ai, but toward real frontier self-driving policies there's nothing open.</p>
+
+        <p class="qa-q">The best published result for long-range urban driving without intervention needed around 80,000 hours of proprietary data. KE:SAI has roughly 2,000 hours of open data. Is closing that gap the bet?</p>
+        <p><strong>Geiger:</strong> I think so. Even with the enormous resources the big labs are spending, they still have a hard time generalizing to the long tail. Humans are orders of magnitude more efficient. And I think it's healthy to have a little bit of a bottleneck. We have much more compute than a university group, but much less than Wayve, Waymo and so on. Interesting research has to happen to reach the same performance with much less data and compute. And once we achieve it, we can probably scale the technology much more easily.</p>
+
+        <h4 class="qa-part">How it started</h4>
+        <p class="qa-q">KE:SAI was announced in May 2026. When did it actually begin?</p>
+        <p><strong>Jaeger:</strong> Two things came together. One was technological: in self-play simulation you can train with trillions of samples in a week, which made it plausible that you could build a self-driving car with much less funding than the big labs have. The other was the need. I try to do things that are needed but that others don't want to do: doing things openly, including the research.</p>
+        <p><strong>Geiger:</strong> We had already drafted a first proposal for a non-profit, in particular with Bernhard Jaeger. We just weren't sure there would be any donors interested. Then we were in a meeting with board members from kyutai, an open-science lab in France that is well funded through private donors, and it turned out they wanted to expand from audio to physical AI and world models, and to Germany in particular. There's always a lot of talk about the Franco-German partnership, yet relatively little actually happens. So we said: why don't we just do something together? And they said: if you commit fully, we do this together and give you initial funding.</p>
+
+        <p class="qa-q">How did the plan change once the money was there?</p>
+        <p><strong>Jaeger:</strong> What people told me at the start was: what you're asking for is the perfect research lab with no constraints. That's what every scientist wants and nobody gets. And why would they give it to a recently graduated PhD student? So the initial plan had to be extremely focused: one branch, and go all in on it. Andreas's strategy got us more funding than I thought we would get, then we asked Kashyap, and we diversified. Now if one branch fails, we still have plan B and plan C.</p>
+        <p><strong>Chitta:</strong> I had planned to be involved as an advisor. When more funding was available, the plan could broaden: PhD positions, because motivated junior researchers with diverse backgrounds keep us learning, and a scope that grew to world modeling for physical AI, with autonomous driving as the primary application but not the only one. That is the version I decided to help build as a co-founder.</p>
+      </div>
+      <aside class="article-rail">
+        <blockquote class="rail-quote">“Why would they give it to a recently graduated PhD student?”</blockquote>
+        <blockquote class="rail-quote">“There's always a lot of talk about the Franco-German partnership, yet relatively little actually happens.”</blockquote>
+      </aside>
+      </div>
+
+      <div class="grid">
+      <div class="feature-body">
+        <h4 class="qa-part">The research</h4>
+        <p class="qa-q">Where does an efficiency gain of that size actually come from?</p>
+        <p><strong>Chitta:</strong> There is no existing approach that gets us the gains we need; the research has to happen here. But there are three initial directions. First, simulation. Simulators turn compute into data. We aim to make them more useful and, at the same time, less compute-intensive. Those two usually pull against each other, which is exactly why it is research. Second, active on-policy data is worth far more per hour than passive logged data. Recorded human driving almost never shows a mistake being corrected; data collected by a policy while it is learning contains recovery. Third, inductive biases, introduced through the data pipeline rather than the architecture: you stage the training, with different types of data at different stages, analogous to how large language model pipelines are built.</p>
+
+        <p class="qa-q">And what is being built right now?</p>
+        <p><strong>Jaeger:</strong> The first step is a very strong reinforcement-learning teacher model in self-play simulation; that's what I'm focusing on. Then we distill that teacher, which works on ground-truth perception, into an end-to-end model that works from sensor inputs, and do sim-to-real transfer to the real car. Right now everything is tested on driving. We say “physical AI” because the methods are generic, but driving is hard enough that we get a good signal.</p>
+        <p><strong>Geiger:</strong> The research vehicle that arrived in July is for small-scale data collection and closed-loop testing. We want to do 99% in simulation, but we always need real-world feedback, through our own car and through companies that give us access to their fleets. The first target is 30 kilometres between infractions, which the top labs can now achieve relatively easily. For us it's a new sensor setup, with much less data.</p>
+
+        <h4 class="qa-part">Why not a university, and why not a company</h4>
+        <p class="qa-q">What can this lab do that a university group cannot?</p>
+        <p><strong>Geiger:</strong> Compute, of course. The university has a big cluster, but so many users that in the end you don't get the compute. Then, the classical PhD is very focused on the six-month publication cycle. Frontier AI needs multiple people, very focused, on something where publication is not the primary focus. The primary focus is to advance the frontier, and the publication is a byproduct. And at the university the postdoc salary is barely more than the PhD salary. We can't offer what US tech companies offer, but we are competitive enough that a larger fraction of our team can be permanent staff, including people dedicated to the hardware or the cluster.</p>
+
+        <p class="qa-q">And why not a for-profit?</p>
+        <p><strong>Jaeger:</strong> There are over a hundred companies working for-profit on self-driving. If I had made a new startup, I would have been the 101st, competing with Waymo and Tesla and already 10 to 15 years behind. If we want to achieve something that others haven't been able to achieve, we need to do something different, and that has to start at the structural level. As a non-profit, there's basically no competition. And it's okay to be late. DeepSeek gave the same performance as GPT-4 about a year later, and it was a big revolution because it was open, because it was free. If we are two years behind and we open something with Tesla-level performance, that still creates tremendous value.</p>
+      </div>
+      <aside class="article-rail">
+        <blockquote class="rail-quote">“The primary focus is to advance the frontier, and the publication is a byproduct.”</blockquote>
+        <blockquote class="rail-quote">“If I had made a new startup, I would have been the 101st.”</blockquote>
+      </aside>
+      </div>
+
+      <blockquote class="pullquote">
+        <p>“If we are two years behind and we open something with Tesla-level performance, that still creates tremendous value.”</p>
+      </blockquote>
+
+      <div class="grid">
+      <div class="feature-body">
+        <h4 class="qa-part">What “open” actually means</h4>
+        <p class="qa-q">Economically, why would giving everything away work?</p>
+        <p><strong>Chitta:</strong> End-to-end driving policies are extraordinarily expensive to train, which is why I think the best of them are closed. But a large part of the industry stands to gain immensely from a neutral, open stack. As we see with LLMs, smaller companies can build on open research instead of rebuilding it from nothing. And the team who did the original work can commercialize an open stack by delivering the most efficient implementation of it. That is an advantage you have to keep earning, which I think is healthy. So openness here is an accelerant.</p>
+
+        <p class="qa-q">Who is the open stack for, once it exists?</p>
+        <p><strong>Geiger:</strong> It democratizes the technology. Robotaxis are more and more available, but there is no robotaxi in India, and the largest number of accidents and fatalities happens in India. And there are 200 car manufacturers, of which only a small fraction actually benefit from self-driving technology.</p>
+        <p><strong>Jaeger:</strong> All the good self-driving software is in extremely premium cars. One hope I have is that open-sourcing gets this technology into lower-end cars as well.</p>
+        <p><strong>Chitta:</strong> There is also a technical reason: if you want something that generalizes, you need data from places where traffic behaves differently.</p>
+
+        <h4 class="qa-part">The first months</h4>
+        <p class="qa-q">What has founding an institution actually consumed?</p>
+        <p><strong>Geiger:</strong> Mostly I have one hour to do actual work, and the remaining seven hours are the rest. It took us six weeks to set up a bank account: maybe fifty emails and ten meetings, just for a bank account. Then insurance, the legal structure, audits. A non-profit is much more complex than a standard for-profit startup. And hiring is very time-intensive: if you just do interviews for three months, you don't get any work done.</p>
+        <p class="qa-note"><em>Update, October: “This has changed now. I do 50/50, and I actually have much more time to work on the methods myself, which is a lot of fun.”</em></p>
+        <p><strong>Jaeger:</strong> My first three months went mostly into the compute cluster. We rent compute for this year, because building up a cluster takes time, and for next year we've ordered GPUs to co-locate in a data centre. Now that's over, and we've done some hiring, so I have much more time for actual research.</p>
+        <p><strong>Chitta:</strong> There are around ten projects running, and much of my job is to be the bridge between them. I'm also starting as a Principal Investigator at ELLIS, where the world models developed at KE:SAI can be tested on new domains.</p>
+      </div>
+      <aside class="article-rail">
+        <blockquote class="rail-quote">“It took us six weeks to set up a bank account.”</blockquote>
+        <blockquote class="rail-quote">“There is no robotaxi in India.”</blockquote>
+      </aside>
+      </div>
+
+      <div class="grid">
+      <div class="feature-body">
+        <h4 class="qa-part">What comes next</h4>
+        <p class="qa-q">What does the coming year look like?</p>
+        <p><strong>Geiger:</strong> Collaborations with external partners that we've started recently: NVIDIA, Valeo and NYU, among others. They have their own engineers and fleets, so we get feedback on what needs to change in our policies. And along the way we want to raise more funding, so we can expand.</p>
+
+        <p class="qa-q">The lab is built around a CEO who has said he will eventually step back. What does that do to it?</p>
+        <p><strong>Geiger:</strong> It's not completely determined how long I stay full-time. At least a year, maybe five. Once the organisation runs smoothly, an external hire can take care of the administrative side, and my role would be more on the scientific side again. I'll always be involved, at least 20%. At the moment I see myself as a catalyst.</p>
+        <p><strong>Jaeger:</strong> What matters is that Andreas is here right now as a full-time CEO. Without him we wouldn't be able to hire this world-class talent. A year from now, at 20%, it doesn't risk the life of KE:SAI.</p>
+
+        <p class="qa-q">And if it works? What happens to the technology then?</p>
+        <p><strong>Geiger:</strong> Even when the technology is ripe, there's still a large gap from research to commercialization: legislation, depots, maintenance, ride-hailing apps. That could be done by companies in-house, or by a translational for-profit spun off from us. kyutai, our mother company in a way, has already done this: they developed audio technology as an open-science lab, then spun off Gradium late last year, with a $70 million seed round.</p>
+        <p><strong>Jaeger:</strong> The important part is that KE:SAI doesn't own IP. We don't have patents. We open-source the software, so anybody can do the same thing.</p>
+
+        <p class="qa-q">And the lab itself, in that scenario?</p>
+        <p><strong>Geiger:</strong> The research entity should still exist, because it needs to focus on the next research challenges. There is a large number of important problems that society has to tackle in the next decades. Research organizations like ours are ideally suited to do so.</p>
+
+        <p class="qa-note"><em>These interviews were conducted separately in Tübingen in summer 2026, with an update in October. They have been edited and condensed for clarity.</em></p>
+      </div>
+      <aside class="article-rail">
+        <blockquote class="rail-quote">“At the moment I see myself as a catalyst.”</blockquote>
+      </aside>
+      </div>
+
+      <div class="aside-box aside-wide">
+        <div class="aside-heading">Get involved</div>
+        <p class="draft-note">To come, confirmed with Andreas: KE:SAI website, open positions, and how students and researchers in Tübingen can collaborate or contribute to the open stack.</p>
+      </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================ RESEARCH ============================ -->
+  <section class="chapter" id="research">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">05</span>
+        <h2>Research</h2>
+        <span class="sub">The talk series of the Tübingen AI community</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div class="kicker">Community · Talk series</div>
+      <h3 class="feature-headline">FridayTalks</h3>
+      <p class="standfirst">Once a month, on a Friday at five, researchers from across Tübingen share what they are working on, and the rest of us find out what the group next door is up to.</p>
+      <div class="byline">By the FridayTalks team</div>
+
+      <div class="grid">
+      <div>
+        <div class="feature-body">
+          <p>Since the last issue, FridayTalks has hosted nine talks over three Fridays, from reinforcement-learning theory to particle physics to the security of reasoning models. The talks are in the lecture hall at MvL1, with food and drinks supported by the <a href="https://tuebingen.ai" target="_blank" rel="noopener noreferrer">Tübingen AI Center</a>, and most of them land on the <a href="https://www.youtube.com/@FridayTalksTuebingen" target="_blank" rel="noopener noreferrer">YouTube channel</a> afterwards.</p>
+          <h4 class="qa-part">Call for talks</h4>
+          <p>Any topic related to AI research is welcome. We especially want to give overlooked ideas more visibility, so talks on work that is under submission, or has been rejected, are strongly encouraged. Sign up via <a href="https://fridaytalks.github.io/" target="_blank" rel="noopener noreferrer">the FridayTalks website</a>, or talk to any member of the organizing team.</p>
+        </div>
+      </div>
+      <aside class="article-rail">
+        <div class="aside-box">
+          <div class="aside-heading">Save the dates</div>
+          <p>The next FridayTalks: <strong>20 Nov</strong> · <strong>29 Jan</strong> · <strong>26 Feb</strong>. Fridays at 17:00, MvL1 lecture hall.</p>
+        </div>
+      </aside>
+      </div>
+
+      <div class="cards-top-rule" style="margin-top:44px">
+        <div class="kicker">From the archive</div>
+        <h3 class="sub-headline">New on YouTube</h3>
+        <p>The recordings published since Issue&nbsp;01. Hover a card for the abstract, click to watch.</p>
+
+        <div class="cards cards-3">
+          <a class="card talk" href="https://www.youtube.com/watch?v=T1ZHMslICME" target="_blank" rel="noopener noreferrer">
+            <div class="ph ph-16-9 talk-thumb">
+              <img src="images/fridaytalks/panfilov.jpg" alt="Talk recording: Alexander Panfilov, Stolen Thoughts" loading="lazy">
+              <span class="talk-play" aria-hidden="true">▶</span>
+              <span class="talk-abstract">LLM providers hide their models' chain of thought, returning it to the client as encrypted blocks that are passed back with each request. These blocks turn out to be interchangeable across sessions, users and models of the same provider. Injecting a strong model's encrypted trace into a weaker, less safeguarded model makes the weaker one decode it verbatim, without ever jailbreaking the stronger model.</span>
+            </div>
+            <div class="kicker">18 Sep 2026 · Alexander Panfilov</div>
+            <h4>Stolen Thoughts: Stealing Reasoning Traces from Proprietary LLM APIs</h4>
+            <p>Encrypted reasoning traces are interchangeable across models, so a weaker model can be made to decrypt a stronger one's.</p>
+            <span class="arrow-link">→ Watch on YouTube</span>
+          </a>
+
+          <a class="card talk" href="https://www.youtube.com/watch?v=G_0b_9V7Y8c" target="_blank" rel="noopener noreferrer">
+            <div class="ph ph-16-9 talk-thumb">
+              <img src="images/fridaytalks/kargi.jpg" alt="Talk recording: Bora Kargi, Conformal Elo Estimation for LLM Evaluation" loading="lazy">
+              <span class="talk-play" aria-hidden="true">▶</span>
+              <span class="talk-abstract">LLM-as-a-judge is cheaper than human annotation, but position bias, self-preference and intransitivity miscalibrate the rankings. Propagating calibrated win probabilities into Bradley–Terry brings LLM-derived ratings within 17.9 Elo of human ones across 55 held-out models on LMArena, and split conformal prediction adds intervals with distribution-free coverage guarantees.</span>
+            </div>
+            <div class="kicker">18 Sep 2026 · Bora Kargi</div>
+            <h4>Conformal Elo Estimation for LLM Evaluation</h4>
+            <p>Calibrated LLM-judge ratings within 18 Elo of human ones, with honest uncertainty bounds.</p>
+            <span class="arrow-link">→ Watch on YouTube</span>
+          </a>
+
+          <a class="card talk" href="https://www.youtube.com/watch?v=0dD5SCJfrBg" target="_blank" rel="noopener noreferrer">
+            <div class="ph ph-16-9 talk-thumb">
+              <img src="images/fridaytalks/renusch.jpg" alt="Talk recording: Jonathan Renusch, Learned Bidirectional State-Space Models for Track Fitting at the LHC" loading="lazy">
+              <span class="talk-play" aria-hidden="true">▶</span>
+              <span class="talk-abstract">Classical track fitting at the Large Hadron Collider uses Kalman filters and least-squares fits, reaching a precision of one part in 10⁵. Treating charged-particle trajectory regression as sequence modelling, a bidirectional gated linear recurrent encoder reproduces that full precision, and with a custom kernel runs significantly faster on GPUs than classical software on similarly priced CPU servers.</span>
+            </div>
+            <div class="kicker">18 Sep 2026 · Jonathan Renusch</div>
+            <h4>Learned Bidirectional State-Space Models for High-Precision Track Fitting at the LHC</h4>
+            <p>A recurrent sequence model matches classical track fitting to one part in 10⁵, and runs faster.</p>
+            <span class="arrow-link">→ Watch on YouTube</span>
+          </a>
+
+          <a class="card talk" href="https://www.youtube.com/watch?v=-DuNF6as3AQ" target="_blank" rel="noopener noreferrer">
+            <div class="ph ph-16-9 talk-thumb">
+              <img src="images/fridaytalks/eberhard.jpg" alt="Talk recording: Onno Eberhard, Commit to the Bit" loading="lazy">
+              <span class="talk-play" aria-hidden="true">▶</span>
+              <span class="talk-abstract">Reinforcement learning is usually analysed under the Markov assumption, which rarely holds in practice. Committed Q-learning, a variant whose behaviour policy commits to one action until the observed feature changes, provably converges to the optimal reactive policy under a condition strictly weaker than those used in prior work.</span>
+            </div>
+            <div class="kicker">21 Aug 2026 · Onno Eberhard</div>
+            <h4>Commit to the Bit: Reactive Reinforcement Learning Done Right</h4>
+            <p>Q-learning that commits to an action until the observation changes, with convergence guarantees beyond the Markov assumption.</p>
+            <span class="arrow-link">→ Watch on YouTube</span>
+          </a>
+
+          <a class="card talk" href="https://www.youtube.com/watch?v=GzpydkgXgBQ" target="_blank" rel="noopener noreferrer">
+            <div class="ph ph-16-9 talk-thumb">
+              <img src="images/fridaytalks/wolf.jpg" alt="Talk recording: Patrik Wolf, Partition, Prompt, Aggregate" loading="lazy">
+              <span class="talk-play" aria-hidden="true">▶</span>
+              <span class="talk-abstract">Do language models behave like coherent conditional estimators? Binary conditioning trees recursively partition a population into subgroups and reveal a “macro fallacy”: estimates rebuilt from subgroup predictions are often more accurate than direct population-level ones. Label-free self-consistency checks show such violations remain widespread across frontier models.</span>
+            </div>
+            <div class="kicker">24 Jul 2026 · Patrik Wolf</div>
+            <h4>Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models</h4>
+            <p>Asking an LLM about subgroups and adding up often beats asking about the whole population directly.</p>
+            <span class="arrow-link">→ Watch on YouTube</span>
+          </a>
+
+          <div class="card card-plain talk-list">
+            <div class="kicker">Also on the programme</div>
+            <h4>Recordings to come</h4>
+            <ul>
+              <li><span>21 Aug</span> Johannes Zenn: On Sequence Probability and Correctness in LLMs</li>
+              <li><span>21 Aug</span> Matevz Matjasec: Causal Inductive Biases for In-Context Learning in Diffusion Language Models</li>
+              <li><span>23 Oct</span> Ting-Wen Ko: Attractor States Emerge in Multi-Turn LLM Conversations</li>
+              <li><span>23 Oct</span> Stephan Eckstein: Optimal Transport Geometries for Neural Network Pruning and Model Aggregation</li>
+              <li><span>23 Oct</span> Sajad Movahedi &amp; Vera Milovanovic: Fixed-Point Reasoners: Stable and Adaptive Deep Looped Transformers</li>
+            </ul>
+            <a class="arrow-link" href="https://fridaytalks.github.io/" target="_blank" rel="noopener noreferrer">→ Full programme</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FUN ============================ -->
+  <section class="chapter chapter-warm" id="fun">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">06</span>
+        <h2>Fun</h2>
+        <span class="sub">Photos, events and the quarter ahead</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div id="photo-of-the-quarter">
+        <div class="kicker">Chosen by you</div>
+        <h3 class="sub-headline">Photo of the Quarter</h3>
+        <p>Decided by emoji votes on the pinned thread in <strong data-todo="slack-channel-url">#tappas</strong>. The photo with the most votes gets the page.</p>
+        <figure class="fig fig-wide">
+          <div class="ph ph-21-9 ph-empty">
+            <span class="ph-empty-label">Winning photo to come</span>
+          </div>
+          <figcaption class="figcaption">
+            <span class="fignum">Figure 10 |</span> [One-line caption to come.]
+            <span class="credit">Photo: [name]</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="split split-wide cards-top-rule" style="margin-top:48px; padding-top:40px">
+        <!-- ---------------- what's on ---------------- -->
+        <div>
+          <div class="kicker">Calendar</div>
+          <h3 class="sub-headline">What's On — The Quarter Ahead</h3>
+          <p>Chocolate, Glühwein, a cult film and three Fridays of talks. Filter by kind, then add any of them to your own calendar.</p>
+
+          <div class="cal" id="calendar">
+            <div class="cal-filters" role="group" aria-label="Filter events by kind">
+              <button class="cal-chip is-on" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="cal-chip" type="button" data-filter="academic" aria-pressed="false">Academic</button>
+              <button class="cal-chip" type="button" data-filter="social" aria-pressed="false">Social</button>
+              <button class="cal-chip" type="button" data-filter="food" aria-pressed="false">Food &amp; craft</button>
+            </div>
+
+            <ul class="cal-list">
+              <li class="cal-item" data-kind="academic"
+                  data-start="2026-11-20T17:00" data-end="2026-11-20T19:00"
+                  data-title="FridayTalks" data-where="Lecture hall, Maria-von-Linden-Strasse 1, Tübingen">
+                <span class="cal-date"><span class="cal-day">20</span><span class="cal-mon">Nov</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Academic</span>
+                  <a class="cal-title" href="https://fridaytalks.github.io/" target="_blank" rel="noopener noreferrer">FridayTalks</a>
+                  <span class="cal-meta">17:00 · MvL1 lecture hall</span>
+                  <span class="cal-desc">Talks by Tübingen AI researchers, followed by food and drinks.</span>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+
+              <li class="cal-item" data-kind="food social" data-allday="true"
+                  data-start="2026-12-01" data-end="2026-12-07"
+                  data-title="chocolART" data-where="Tübingen old town">
+                <span class="cal-date"><span class="cal-day">1–6</span><span class="cal-mon">Dec</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Food · Social</span>
+                  <a class="cal-title" href="https://www.krone-tuebingen.de/de/urlaub-in-tuebingen/schokoladenfestival-chocolart" target="_blank" rel="noopener noreferrer">chocolART</a>
+                  <span class="cal-meta">Tübingen old town</span>
+                  <span class="cal-desc">Chocolate festival and market. Ever wanted to buy a car made of chocolate? Then you need to go. Hot melted chocolate everywhere and an amazing range of sweets, at rather high prices.</span>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+
+              <li class="cal-item" data-kind="social"
+                  data-start="2026-12-11T19:00" data-end="2026-12-11T21:00"
+                  data-title="Feuerzangenbowle screening" data-where="Haagtorplatz, Tübingen">
+                <span class="cal-date"><span class="cal-day">11</span><span class="cal-mon">Dec</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Social</span>
+                  <span class="cal-title">Feuerzangenbowle</span>
+                  <span class="cal-meta">19:00 · Haagtorplatz</span>
+                  <span class="cal-desc">Open-air screening of the 1944 German cult film, part of the Christmas market. Pretty much everybody knows it. Be prepared for the audience to randomly do things, and you might find out „Wat is en Dampfmaschin?“</span>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+
+              <li class="cal-item" data-kind="food social" data-allday="true"
+                  data-start="2026-12-11" data-end="2026-12-14"
+                  data-title="Tübingen Christmas market" data-where="Tübingen old town">
+                <span class="cal-date"><span class="cal-day">11–13</span><span class="cal-mon">Dec</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Food · Social</span>
+                  <a class="cal-title" href="https://www.tuemarkt.de/tuebinger-weihnachtsmarkt/" target="_blank" rel="noopener noreferrer">Tübingen Christmas market</a>
+                  <span class="cal-meta">Tübingen old town</span>
+                  <span class="cal-desc">Run mainly by clubs and volunteers, so your Glühwein, Punsch, Rote or Schupfnudeln with sauerkraut supports them. Other markets may look prettier; this one has character.</span>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+
+              <li class="cal-item" data-kind="academic"
+                  data-start="2027-01-29T17:00" data-end="2027-01-29T19:00"
+                  data-title="FridayTalks" data-where="Lecture hall, Maria-von-Linden-Strasse 1, Tübingen">
+                <span class="cal-date"><span class="cal-day">29</span><span class="cal-mon">Jan</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Academic</span>
+                  <a class="cal-title" href="https://fridaytalks.github.io/" target="_blank" rel="noopener noreferrer">FridayTalks</a>
+                  <span class="cal-meta">17:00 · MvL1 lecture hall</span>
+                  <span class="cal-desc">The first FridayTalks of 2027.</span>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+
+              <li class="cal-item" data-kind="academic"
+                  data-start="2027-02-26T17:00" data-end="2027-02-26T19:00"
+                  data-title="FridayTalks" data-where="Lecture hall, Maria-von-Linden-Strasse 1, Tübingen">
+                <span class="cal-date"><span class="cal-day">26</span><span class="cal-mon">Feb</span></span>
+                <span class="cal-body">
+                  <span class="cal-kind">Academic</span>
+                  <a class="cal-title" href="https://fridaytalks.github.io/" target="_blank" rel="noopener noreferrer">FridayTalks</a>
+                  <span class="cal-meta">17:00 · MvL1 lecture hall</span>
+                  <span class="cal-desc">Talks by Tübingen AI researchers, followed by food and drinks.</span>
+                </span>
+                <button class="cal-add" type="button">Add</button>
+              </li>
+            </ul>
+
+            <p class="cal-foot">
+              <span id="cal-count" aria-live="polite">6 events</span>
+              <button class="cal-all" type="button" id="cal-all">Download all as .ics</button>
+            </p>
+          </div>
+          <p class="cal-deadline"><strong>Deadline watch:</strong> ICML, end of January, online. Why go? “Puh… don't know. I guess if you want to go to a conference with many, many people.”</p>
+          <p class="cal-credit">Compiled by Rabanus, with the FridayTalks dates added. More at <a href="https://www.tuebingen.de/veranstaltungen#/" target="_blank" rel="noopener noreferrer">tuebingen.de/veranstaltungen</a>.</p>
+        </div>
+
+        <!-- ---------------- german words ---------------- -->
+        <div>
+          <div class="kicker">Language</div>
+          <h3 class="sub-headline">Word &amp; Idiom of the Quarter</h3>
+          <p>Four to carry into winter: three idioms and one very useful word. Tap a card to turn it over.</p>
+
+          <div class="flashcards">
+            <button class="flash flash-xl" type="button" aria-pressed="false">
+              <span class="flash-inner">
+                <span class="flash-face flash-front">
+                  <span class="flash-tag">Idiom</span>
+                  <span class="flash-term">„Es gibt Lerchen und Eulen.“</span>
+                  <span class="flash-hint">Tap to reveal</span>
+                </span>
+                <span class="flash-face flash-back">
+                  <span class="flash-tag">Idiom</span>
+                  <span class="flash-def">“There are larks and owls.” Some people start work at 8 am, and some start the day at 2 pm. Birdwatchers know.</span>
+                  <span class="flash-note">Careful: <em>Lerche</em> is the bird (lark), but <em>Lärche</em> is the tree (larch). Trees are always awake, so look not only at when you start but also at when you leave. We may not be made to be birds, but we are certainly not made to be trees. Don't make yourself larcher than you are.</span>
+                </span>
+              </span>
+            </button>
+
+            <button class="flash flash-tall" type="button" aria-pressed="false">
+              <span class="flash-inner">
+                <span class="flash-face flash-front">
+                  <span class="flash-tag">Idiom</span>
+                  <span class="flash-term">„Hochmut kommt vor dem Fall.“</span>
+                  <span class="flash-hint">Tap to reveal</span>
+                </span>
+                <span class="flash-face flash-back">
+                  <span class="flash-tag">Idiom</span>
+                  <span class="flash-def">“Arrogance comes before the fall.” It means what it says, with a pun: <em>hoch</em> is high, and <em>Fall</em> is a fall.</span>
+                  <span class="flash-note">Always good to remind yourself and others to stay humble, especially nowadays. It is fall, after all.</span>
+                </span>
+              </span>
+            </button>
+
+            <button class="flash flash-tall" type="button" aria-pressed="false">
+              <span class="flash-inner">
+                <span class="flash-face flash-front">
+                  <span class="flash-tag">Idiom</span>
+                  <span class="flash-term">„Hier steppt der Bär, hier boxt der Papst.“</span>
+                  <span class="flash-hint">Tap to reveal</span>
+                </span>
+                <span class="flash-face flash-back">
+                  <span class="flash-tag">Idiom</span>
+                  <span class="flash-def">“This is where the bear dances; this is where the pope boxes.”</span>
+                  <span class="flash-note">Christmas parties can go pretty rogue. This is the idiom for when you arrive late and the party has already gone off the rails, in a good way.</span>
+                </span>
+              </span>
+            </button>
+
+            <button class="flash flash-xl" type="button" aria-pressed="false">
+              <span class="flash-inner">
+                <span class="flash-face flash-front">
+                  <span class="flash-tag">Word</span>
+                  <span class="flash-term">egal</span>
+                  <span class="flash-hint">Tap to reveal</span>
+                </span>
+                <span class="flash-face flash-back">
+                  <span class="flash-tag">Word</span>
+                  <span class="flash-def">“Doesn't matter”, “whatever”, “never mind.” Indifference without rudeness, and a word English is missing.</span>
+                  <span class="flash-use">„Möchtest du lieber x oder y?“ – „Mir egal.“ · „Was hast du damit gemeint?!“ – „Ach, egal, wir können ja …“</span>
+                  <span class="flash-note">One word to opt out of a brewing argument.</span>
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ LIFE ============================ -->
+  <section class="chapter" id="life">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">07</span>
+        <h2>Life</h2>
+        <span class="sub">Around the AI Center, and beyond the desk</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <figure class="fig chapter-opener">
+        <div class="ph ph-opener ph-empty">
+          <span class="ph-empty-label">Photo to come<br>A Christmas market at dusk</span>
+        </div>
+        <figcaption class="figcaption">
+          <span class="fignum">Figure 11 |</span> [Caption to come.]
+        </figcaption>
+      </figure>
+
+      <div id="markets-article">
+        <div class="kicker">Life · Christmas markets</div>
+        <h3 class="feature-headline">Christmas Markets: Where They Are, and How They Are</h3>
+        <p class="standfirst">Four markets within easy reach of the campus, from the region's medieval favourite to a one-weekend wonder in the old town. Where to go, what to expect, and when to stay away.</p>
+        <div class="byline">By Fynn Neurath · Dates for 2026</div>
+
+        <div class="markets" id="markets">
+          <article class="market" data-start="2026-11-26" data-end="2026-12-22">
+            <div class="market-top">
+              <span class="market-when">26 Nov – 22 Dec</span>
+              <span class="market-status" aria-live="polite"></span>
+            </div>
+            <h4 class="market-name">Reutlingen Weihnachtsmarkt</h4>
+            <p>I have never visited this one myself: as a good Tübingen citizen, I categorically avoided Reutlingen whenever possible. The market also has a new main organiser this year, so some things will probably be different from last year. Might be worth checking out!</p>
+            <p class="market-link">No website found yet</p>
+          </article>
+
+          <article class="market" data-start="2026-11-24" data-end="2026-12-22">
+            <div class="market-top">
+              <span class="market-when">24 Nov – 22 Dec</span>
+              <span class="market-status" aria-live="polite"></span>
+            </div>
+            <h4 class="market-name">Esslingen Weihnachtsmarkt</h4>
+            <p>For many people in this region, this is the go-to Christmas market, and for good reason. It's pretty big, has a medieval-themed section and offers some events. If you feel like it, bring your swimwear for some public hot-tub bathing (you need to book that). Being the go-to choice also means it's <strong>crowded</strong>, especially on weekend evenings, so be prepared.</p>
+            <p class="market-link"><a class="arrow-link" href="https://www.esslingen-info.com/en/events/esslingen-christmas-medievalmarket" target="_blank" rel="noopener noreferrer">→ esslingen-info.com</a></p>
+          </article>
+
+          <article class="market" data-start="2026-12-11" data-end="2026-12-13">
+            <div class="market-top">
+              <span class="market-when">11 – 13 Dec</span>
+              <span class="market-status" aria-live="polite"></span>
+            </div>
+            <h4 class="market-name">Tübingen Weihnachtsmarkt</h4>
+            <p>More of a one-weekend wonder. It's not as big as the market in Esslingen or the chocolART, and if you look the wrong way for a moment, you could miss it. But it has some cute booths, many of them run by local businesses, and some offer vegan Bratwurst.</p>
+            <p class="market-link"><a class="arrow-link" href="https://www.tuemarkt.de/tuebinger-weihnachtsmarkt/" target="_blank" rel="noopener noreferrer">→ tuemarkt.de</a></p>
+          </article>
+
+          <article class="market" data-start="2026-12-01" data-end="2026-12-06">
+            <div class="market-top">
+              <span class="market-when">1 – 6 Dec</span>
+              <span class="market-status" aria-live="polite"></span>
+            </div>
+            <h4 class="market-name">Tübingen chocolART</h4>
+            <p>Tübingen's main Christmas event, and all about chocolate: every kind of chocolate and chocolate product, chocolate liqueur to get drunk on, chocolate art to buy. What's true for Esslingen is doubly true here: it's famous, so it's packed. If you'd like to experience the hypothetical emotions of a water molecule in a clogged garden hose, a Saturday evening at the chocolART will get you pretty close. If you can manage to go earlier in the week, it's okay…</p>
+            <p class="market-link"><a class="arrow-link" href="https://www.krone-tuebingen.de/de/urlaub-in-tuebingen/schokoladenfestival-chocolart" target="_blank" rel="noopener noreferrer">→ krone-tuebingen.de</a></p>
+          </article>
+        </div>
+        <p class="markets-note">The labels above update with today's date.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FEEDBACK ============================ -->
+  <section class="feedback" id="feedback">
+    <div class="col">
+      <div class="feedback-head">
+        <div class="kicker">Feedback</div>
+        <h2>Tell Us What You Think</h2>
+        <p>Three questions, two minutes. Keep it? What&#8217;s missing? Do you want to help make issue&nbsp;#3? Answers go to the editors, and they decide what this magazine becomes.</p>
+      </div>
+
+      <!-- Linked, not embedded. An <iframe> to docs.google.com would fetch
+           Google on page load and hand them every reader's IP address whether
+           or not anyone fills the form in — which would need a consent banner
+           and would break the promise in the privacy note below. A link sends
+           nothing until the reader clicks it. -->
+      <!-- TODO editors: this is still the Issue 01 form. Swap in a new one if the questions change. -->
+      <p class="poll-cta">
+        <a class="btn-vote" href="https://forms.gle/Dbrpzuc36oMZo1xR7" target="_blank" rel="noopener noreferrer">Open the feedback form &rarr;</a>
+        <span class="poll-cta-note">Opens a Google Form in a new tab. Anonymous; no sign-in needed.</span>
+      </p>
+
+      <ul class="feedback-ways">
+        <li>
+          <span class="feedback-way-label">By mail</span>
+          <a class="feedback-way-link" href="mailto:tappa.tue@gmail.com?subject=TAPPAS%20%E2%80%94%20feedback%20on%20Issue%2002">tappa.tue@gmail.com</a>
+          <span class="feedback-way-note">If you would rather not use a form. Three lines is plenty.</span>
+        </li>
+        <li>
+          <span class="feedback-way-label">On Slack</span>
+          <span class="feedback-way-link" data-todo="slack-channel-url">#tappas</span>
+          <span class="feedback-way-note">Where the editors already are, and where the argument about the Christmas markets is happening.</span>
+        </li>
+      </ul>
+
+      <p class="form-note">The form is a link, not an embed: nothing of yours reaches Google unless you follow it, and then under Google&#8217;s own terms. The page does count readers — see the privacy note below for what that does and does not record.</p>
+    </div>
+  </section>
+
+  <!-- ============================ CREDITS ============================ -->
+  <section class="chapter chapter-warm" id="credits">
+    <div class="col">
+      <div class="chapter-head">
+        <span class="n">08</span>
+        <h2>Masthead &amp; Credits</h2>
+        <span class="sub">Who made Issue 02</span>
+      </div>
+      <div class="accent-rule"></div>
+
+      <div class="cards cards-3">
+        <div class="card card-plain">
+          <div class="kicker">Editorial</div>
+          <h4>Editors &amp; writers</h4>
+          <p>Edited by <strong>Haiwen Huang</strong> &amp; <strong>Mina Remeli</strong>. Parenthood survey by <strong>Haiwen Huang</strong> &amp; <strong>Mina Remeli</strong>. KE:SAI interview by <strong>Haiwen Huang</strong>. Christmas markets by <strong>Fynn Neurath</strong>. Word &amp; idiom by <strong>Fynn Neurath</strong>. What's On compiled by <strong>Rabanus Derr</strong>. FridayTalks by the FridayTalks team.</p>
+        </div>
+        <div class="card card-plain">
+          <div class="kicker">Design</div>
+          <h4>Design &amp; illustration</h4>
+          <p>Visual identity, cover and layout by <strong>Beste Aydemir</strong> and the TAPPA design team.</p>
+        </div>
+        <div class="card card-plain">
+          <div class="kicker">Thanks</div>
+          <h4>Thank you</h4>
+          <p>To <strong>Andreas Geiger</strong>, <strong>Kashyap Chitta</strong> and <strong>Bernhard Jaeger</strong> for the KE:SAI interviews, to the parents who talked to us, to everyone who answered the parenthood survey, and to everyone who sent photos, ideas and votes.</p>
+        </div>
+      </div>
+
+      <div class="aside-box aside-box-ink aside-wide" style="margin-top:44px">
+        <div class="aside-heading">Coming up in Issue 03</div>
+        <p class="draft-note">To be decided after the freeze.</p>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- ============================ IMPRESSUM ============================ -->
+<section class="legal" id="impressum">
+  <div class="col">
+    <div class="legal-head">
+      <h2>Legal Notice &amp; Privacy</h2>
+      <span class="legal-sub">Information pursuant to § 5 of the German Digital Services Act (DDG)</span>
+    </div>
+
+    <div class="legal-grid">
+      <!-- ---------------- Legal Notice ---------------- -->
+      <div class="legal-col">
+        <h3>Legal Notice</h3>
+
+        <dl class="legal-dl">
+          <dt>Website operator</dt>
+          <dd>
+            <strong>TAPPA — T&#252;bingen AI PhD and Postdoc Assembly</strong><br>
+            TAPPA is a grassroots initiative bringing together PhD students and postdocs conducting
+            research in artificial intelligence in T&#252;bingen. This website is operated on behalf
+            of TAPPA by its responsible representatives.
+          </dd>
+
+          <dt>Contact</dt>
+          <dd>
+            For questions regarding TAPPA or this website, please use the contact options provided on our
+            <a href="https://tappa-org.github.io/contact/">Get in touch</a> page.<br>
+            E-Mail: <a href="mailto:tappa.tue@gmail.com">tappa.tue@gmail.com</a>
+          </dd>
+
+          <dt>Responsible persons</dt>
+          <dd>
+            TAPPA<br>
+            Rabanus Derr<br>
+            Maria-von-Linden-Strasse 1<br>
+            72076 T&#252;bingen, Germany<br>
+            <span class="legal-fine">For matters concerning the content of this website, please contact
+            the TAPPA team via the contact details provided on the website.</span>
+          </dd>
+        </dl>
+
+        <h4>Content of this website</h4>
+        <p>We make every effort to ensure that the information provided on this website is accurate and up to date. However, we cannot guarantee the completeness, accuracy, or timeliness of the information.</p>
+        <p>TAPPA is a voluntary grassroots initiative. Information about events, meetings, projects, and other activities is provided for general informational purposes and may be subject to change.</p>
+
+        <h4>External links</h4>
+        <p>This website contains links to external websites operated by third parties. We carefully select the links we provide, but we have no control over the content of external websites.</p>
+        <p>We therefore assume no responsibility or liability for the content of linked third-party websites. The respective operators are solely responsible for their content. If we become aware of any legal violations on linked websites, we will review the relevant link and take appropriate action where necessary.</p>
+
+        <h4>Copyright</h4>
+        <p>Unless otherwise stated, the content and materials published on this website are subject to applicable copyright law. The reproduction, editing, distribution, or other use of content beyond the limits permitted by copyright law requires the prior consent of the respective rights holder.</p>
+        <p>Where content on this website has been created by third parties, the rights of those third parties remain unaffected. Articles and images belong to their respective authors, who are named with each piece. The typefaces Spectral and Inter are licensed under the SIL Open Font License 1.1.</p>
+
+        <h4>Contact regarding this Legal Notice</h4>
+        <p>If you have questions about this Legal Notice or believe that content on this website violates applicable law, please contact us through the contact details provided on this website.</p>
+
+        <p class="legal-fine">Last updated: September 2026</p>
+      </div>
+
+      <!-- ---------------- Privacy ---------------- -->
+      <div class="legal-col">
+        <h3>Privacy Policy</h3>
+
+        <h4>Privacy and data protection</h4>
+        <p>We take the protection of personal data seriously. Personal data is processed only where this is permitted under applicable data protection law, in particular the General Data Protection Regulation (GDPR) and applicable German data protection legislation.</p>
+        <p>Where processing is based on your consent, you may withdraw that consent at any time. Withdrawal of consent does not affect the lawfulness of processing carried out before the withdrawal.</p>
+
+        <p class="legal-lede">In short: this page sets no cookies, stores nothing on your device, and collects no personal data about you. It counts readers, in a way that cannot identify one.</p>
+
+        <h4>Visitor statistics</h4>
+        <p>To find out roughly how many people read an issue, this page uses <a href="https://www.goatcounter.com/" target="_blank" rel="noopener noreferrer">GoatCounter</a>, an open-source analytics tool. It sets no cookies and writes nothing to your device, so no consent banner is required under § 25 TDDDG. It stores no IP address: a visit is identified by a hash of IP address, browser string and a salt that is discarded every 24 hours, which cannot be traced back to you or used to follow you across sites. Only aggregate counts are kept — page views, referrer, browser, country. The legal basis is our legitimate interest in knowing whether the magazine is read, Art. 6(1)(f) GDPR. You can object at any time using the contact address above, or by switching on &#8220;Do Not Track&#8221; in your browser, which GoatCounter honours.</p>
+
+        <h4>No tracking, nothing embedded</h4>
+        <p>No advertising networks are used and nothing follows you between sites. No third-party content is embedded — no maps, no forms, no videos, no fonts from someone else&#8217;s server. The feedback form is a link, not an embed: nothing is sent to Google unless you follow it. Talk thumbnails are served from this site, and YouTube is only contacted if you click through to a video.</p>
+
+        <h4>Fonts</h4>
+        <p>Spectral and Inter are served from this server rather than from a Google CDN, so loading the page transmits no IP address to any third party.</p>
+
+        <h4>Hosting</h4>
+        <p>The site is hosted on GitHub Pages (GitHub, Inc.). When the page is retrieved, technically necessary server logs (including the IP address) are processed there. The legal basis is Art. 6(1)(f) GDPR.</p>
+
+        <h4>Your rights</h4>
+        <p>You have the right of access, rectification, erasure, restriction of processing, data portability and objection, as well as the right to lodge a complaint with a supervisory authority. Please use the contact address given above.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="colophon">
+  <div class="col colophon-inner">
+    <p>TAPPA Quarterly is written and edited by the Tübingen AI PhD &amp; postdoc community.</p>
+    <p><a href="#impressum">Legal Notice &amp; Privacy</a> · © 2026 TAPPA · House Style v0.1</p>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged figure">
+  <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close">&times;</button>
+  <div class="lightbox-stage" id="lightbox-stage"></div>
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</dialog>
+
+<script src="app.js"></script>
+
+</body>
+</html>
