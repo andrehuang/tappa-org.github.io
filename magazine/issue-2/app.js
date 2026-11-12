@@ -115,7 +115,7 @@
           }
           s === 0 ? ctx.moveTo(x * w, y) : ctx.lineTo(x * w, y);
         }
-        ctx.strokeStyle = 'rgba(123, 224, 192, ' + c.alpha + ')';
+        ctx.strokeStyle = 'rgba(230, 190, 106, ' + c.alpha + ')';
         ctx.lineWidth = 1.1;
         ctx.stroke();
       });
@@ -261,7 +261,7 @@
         ctx.lineTo(pt[0], pt[1]);
       }
       ctx.closePath();
-      ctx.fillStyle = 'rgba(15, 122, 95, ' + alpha + ')';
+      ctx.fillStyle = 'rgba(139, 72, 0, ' + alpha + ')';
       ctx.fill();
     }
 
@@ -272,7 +272,7 @@
       // baseline
       ctx.beginPath();
       ctx.moveTo(0, h / 2); ctx.lineTo(w, h / 2);
-      ctx.strokeStyle = '#D8D8D2'; ctx.lineWidth = 1; ctx.stroke();
+      ctx.strokeStyle = '#DFD7CA'; ctx.lineWidth = 1; ctx.stroke();
 
       band(p, 2, 0.09);
       band(p, 1, 0.14);
@@ -283,14 +283,14 @@
         var pt = toPx(p.xs[i], p.mean[i]);
         i === 0 ? ctx.moveTo(pt[0], pt[1]) : ctx.lineTo(pt[0], pt[1]);
       }
-      ctx.strokeStyle = '#0F7A5F'; ctx.lineWidth = 2.4; ctx.stroke();
+      ctx.strokeStyle = '#8B4800'; ctx.lineWidth = 2.4; ctx.stroke();
 
       // observations
       points.forEach(function (pt) {
         var c = toPx(pt[0], pt[1]);
         ctx.beginPath(); ctx.arc(c[0], c[1], 5, 0, Math.PI * 2);
-        ctx.fillStyle = '#141414'; ctx.fill();
-        ctx.strokeStyle = '#FAF7F1'; ctx.lineWidth = 1.5; ctx.stroke();
+        ctx.fillStyle = '#17130F'; ctx.fill();
+        ctx.strokeStyle = '#FAF6EE'; ctx.lineWidth = 1.5; ctx.stroke();
       });
 
       if (countEl) {
