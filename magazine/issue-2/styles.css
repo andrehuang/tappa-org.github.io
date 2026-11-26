@@ -2325,6 +2325,11 @@ a.cal-title:focus-visible { color: var(--accent); text-decoration: underline; }
    alongside the passage they come from */
 .grid > .article-rail { align-self: stretch; }
 
+/* In the long KE:SAI interview, quote-only rails leave room at both ends,
+   so the last quote of one passage never butts against the first quote of
+   the next. Rails holding an aside-box keep it at the top. */
+#kesai .grid > .article-rail:not(:has(.aside-box)) { justify-content: space-around; }
+
 
 /* ==========================================================================
    Collapsed figures — the takeaway is always readable, the chart is opt-in

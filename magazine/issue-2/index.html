@@ -832,7 +832,7 @@
         <div>
           <div class="kicker">Inside · Non-profit lab</div>
           <h3 class="feature-headline">Inside KE:SAI</h3>
-          <p class="standfirst">No investors, no equity, no patents. Tübingen's newest AI lab is trying to reach the frontier of self-driving with a fortieth of the data, and to give away everything it builds.</p>
+          <p class="standfirst">No investors, no equity, no patents. Tübingen's newest AI lab is trying to reach the frontier of self-driving with a fortieth of the data — and to give away everything it builds.</p>
           <div class="byline">Interview by Haiwen Huang · <span class="read-time" data-for="kesai"></span></div>
         </div>
         <figure class="fig">
@@ -845,12 +845,12 @@
         </figure>
       </div>
 
-      <p class="draft-note">First cut, about 2,100 words, down from about 3,700 in the Notion draft (tracker target: 800–1,200). Every theme is kept, with answers trimmed and some merged; wording stays the interviewees' own except for joins. Needs Andreas's sign-off before release, and a “how to get involved” box at the end.</p>
+      <p class="draft-note">Restored from the Notion draft with light trims: about 3,400 words, down from about 3,750 (tracker target: 800–1,200). All 23 questions are kept; cuts are repetitions, side remarks and filler inside answers, and the wording is the interviewees' own. One wording fix to check with Andreas: “recognised as an official research and academic institution” (transcript: “granted as”). Needs Andreas's sign-off before release, and a “how to get involved” box at the end.</p>
 
       <div class="grid">
       <div class="feature-body">
-        <p>KE:SAI (Kyutai ELLIS Scalable Autonomous Intelligence) builds world models, simulation and self-driving policies, and releases them openly. It is funded by donations; there is no equity in it and nothing to sell.</p>
-        <p>Over the summer I interviewed three of its founders separately. <strong>Andreas Geiger</strong> holds the chair for Autonomous Vision at the University of Tübingen and is on leave to serve as CEO. <strong>Kashyap Chitta</strong> did his PhD in the same group, spent a year at NVIDIA's autonomous-driving research group and returned as CTO. <strong>Bernhard Jaeger</strong> finished his PhD this year. Their answers are grouped by theme below.</p>
+        <p>KE:SAI — Kyutai ELLIS Scalable Autonomous Intelligence — builds world models, simulation and self-driving policies, and releases them openly. It is funded by donations, and there is no equity in it and nothing to sell.</p>
+        <p>Over the summer I interviewed three of its founders separately: <strong>Andreas Geiger</strong>, who holds the chair for Autonomous Vision at the University of Tübingen and is on leave to serve as CEO; <strong>Kashyap Chitta</strong>, who finished his PhD in the same group, spent a year at NVIDIA's autonomous-driving research group and returned as CTO; and <strong>Bernhard Jaeger</strong>, who finished his PhD this year. Their answers are grouped by theme below.</p>
       </div>
       <aside class="article-rail">
         <div class="aside-box">
@@ -875,47 +875,77 @@
       <div class="feature-body">
         <h4 class="qa-part">The mission</h4>
         <p class="qa-q">What gap is KE:SAI trying to fill?</p>
-        <p><strong>Geiger:</strong> In our field there's academic research, and there's frontier-AI-lab research, and there's very little connection in between. The frontier is driven primarily by a few siloed labs, and as the labs get bigger, they become less and less open. I'm fundamentally convinced that to solve these really challenging problems, we need the whole community. And in Europe we have the additional problem that we are behind. The European economy becomes more and more dependent on external AI suppliers from China and the US, despite the fact that we have the talent in Europe.</p>
-        <p>Look at the most popular operating system today: it thrived through the open-source community. So we believe something like the Linux of self-driving has to be established. There's Autoware, and there's comma.ai, but toward real frontier self-driving policies there's nothing open.</p>
+        <p><strong>Geiger:</strong> In our field there's academic research, and there's frontier-AI-lab research, and there's very little connection in between. The community is huge, but the frontier is driven primarily by a few siloed labs — and as the labs get bigger, they become less and less open. I'm fundamentally convinced that to solve these really challenging problems, we need the whole community.</p>
+        <p>And in Europe we have the additional problem that we are behind. The European economy becomes more and more dependent on external AI suppliers from China and the US — despite the fact that we have the talent in Europe. And all the science and research in Europe depends on the welfare of the economy, because it's financed through taxes. So it's not just the companies that need to survive; the whole economy needs to survive.</p>
+        <p>Look at the most popular operating system today: it thrived through the open-source community. So we believe something like the Linux of self-driving has to be established, and we want to drive that progress together with the community. There's Autoware, and there's comma.ai, but toward real frontier self-driving policies there's nothing open.</p>
 
-        <p class="qa-q">The best published result for long-range urban driving without intervention needed around 80,000 hours of proprietary data. KE:SAI has roughly 2,000 hours of open data. Is closing that gap the bet?</p>
-        <p><strong>Geiger:</strong> I think so. Even with the enormous resources the big labs are spending, they still have a hard time generalizing to the long tail. Humans are orders of magnitude more efficient. And I think it's healthy to have a little bit of a bottleneck. We have much more compute than a university group, but much less than Wayve, Waymo and so on. Interesting research has to happen to reach the same performance with much less data and compute. And once we achieve it, we can probably scale the technology much more easily.</p>
+        <p class="qa-q">The best published result for long-range urban driving without intervention needed around 80,000 hours of proprietary data, and the model can't be released. KE:SAI has roughly 2,000 hours of open data. Is closing that gap the bet?</p>
+        <p><strong>Geiger:</strong> I think so. Even with these enormous resources the big labs are spending, they still have a hard time generalizing to the long tail. And it's even worse: only a handful of labs have the financial resources to do this very large-scale training. Humans are orders of magnitude more efficient.</p>
+        <p>And I think it's healthy to have a little bit of a bottleneck. We are not as bottlenecked as the university, where we couldn't do this type of research at all — we have much more compute. But we have much less compute than Wayve, Waymo and so on. We try to achieve some of the same performance with much less data and compute, and interesting research has to happen to make that possible. Once we achieve it, we can probably scale the technology much more easily.</p>
 
         <h4 class="qa-part">How it started</h4>
         <p class="qa-q">KE:SAI was announced in May 2026. When did it actually begin?</p>
-        <p><strong>Jaeger:</strong> Two things came together. One was technological: in self-play simulation you can train with trillions of samples in a week, which made it plausible that you could build a self-driving car with much less funding than the big labs have. The other was the need. I try to do things that are needed but that others don't want to do: doing things openly, including the research.</p>
-        <p><strong>Geiger:</strong> We had already drafted a first proposal for a non-profit, in particular with Bernhard Jaeger. We just weren't sure there would be any donors interested. Then we were in a meeting with board members from kyutai, an open-science lab in France that is well funded through private donors, and it turned out they wanted to expand from audio to physical AI and world models, and to Germany in particular. There's always a lot of talk about the Franco-German partnership, yet relatively little actually happens. So we said: why don't we just do something together? And they said: if you commit fully, we do this together and give you initial funding.</p>
+        <p><strong>Jaeger:</strong> Two things came together. One was technological: there were developments that made it plausible that you could build a self-driving car with much less funding than the big labs have — so that you could actually do this in a non-profit environment. In self-play simulation you can train with trillions of samples in a week, which is not possible with real data.</p>
+        <p>The other was the need. I try to do things that are needed but that others don't want to do: doing things openly, including the research. This is especially the case for autonomous driving.</p>
+        <p><strong>Geiger:</strong> We had already had longer discussions, in particular with Bernhard Jaeger, on establishing a non-profit to do research in this space, because there's so much closed research happening in physical AI. We had already drafted a first proposal. We just weren't sure there would be any donors interested in supporting it.</p>
+
+        <p class="qa-q">Was there resistance to the idea?</p>
+        <p><strong>Jaeger:</strong> Yes, initially there were concerns about technological feasibility and funding. But two things convinced us to go ahead anyway. One was stubbornness — okay, I'm going to do this; if I fail, I fail. The other was that we found other organisations like us. We didn't know they existed, but there are a few around the world. In the US they're called Focused Research Organizations — a similar non-profit status, funded by donations from wealthy people, with this open-science mindset. And they were making the same arguments: that there are gaps in science that universities can't address and industry doesn't want to address because it's closed.</p>
+
+        <p class="qa-q">And how did it finally become a feasible plan?</p>
+        <p><strong>Geiger:</strong> We were in a meeting with board members from kyutai — an open-science lab in France, well funded through private donors — and it turned out they wanted to expand from their audio background to physical AI and world models, and to Germany in particular. There's always a lot of talk about the Franco-German partnership, yet relatively little actually happens; Europe stays very fragmented. We think the best way to solve this is not top-down but bottom-up. So we said: why don't we just do something together? And they said: if you commit fully, we do this together and give you initial funding.</p>
 
         <p class="qa-q">How did the plan change once the money was there?</p>
-        <p><strong>Jaeger:</strong> What people told me at the start was: what you're asking for is the perfect research lab with no constraints. That's what every scientist wants and nobody gets. And why would they give it to a recently graduated PhD student? So the initial plan had to be extremely focused: one branch, and go all in on it. Andreas's strategy got us more funding than I thought we would get, then we asked Kashyap, and we diversified. Now if one branch fails, we still have plan B and plan C.</p>
-        <p><strong>Chitta:</strong> I had planned to be involved as an advisor. When more funding was available, the plan could broaden: PhD positions, because motivated junior researchers with diverse backgrounds keep us learning, and a scope that grew to world modeling for physical AI, with autonomous driving as the primary application but not the only one. That is the version I decided to help build as a co-founder.</p>
+        <p><strong>Jaeger:</strong> What people told me at the start was: the thing you're asking for is the perfect research lab that has no constraints — as much funding as possible, no bureaucracy. That's what every scientist wants and nobody gets. And why would they give it to a recently graduated PhD student?</p>
+        <p>So the initial plan had to be extremely focused, just to have a chance at enough money. That changed once Andreas came. His strategy got us more funding than I thought we would get, and then we asked Kashyap, and we diversified. In the beginning we had one branch that might succeed, and the plan was to go all in on it. Now we have several, so if one fails we still have plan B and plan C.</p>
+        <p><strong>Chitta:</strong> I planned to be involved as an advisor initially. I wanted to continue my postdoc at NVIDIA and look for longer-term academic positions, and I thought advising was a better fit than being part of the founding team. The first version of the plan was narrow — a five-year push at a specific, promising solution, with very little room to explore new frontiers.</p>
+        <p>When more funding was available, the plan could broaden. By February 2026 we had discussed the inclusion of PhD positions. I thought that having some motivated junior researchers with diverse backgrounds as part of the team would be critical. It would keep us learning, help train a new generation of experts, and increase the chances we make major breakthroughs. The research scope could also broaden to general world modeling for physical AI, with autonomous driving as the primary application, but not the only one. This is the version I decided to help build as a co-founder rather than an advisor.</p>
       </div>
       <aside class="article-rail">
-        <blockquote class="rail-quote">“Why would they give it to a recently graduated PhD student?”</blockquote>
+        <blockquote class="rail-quote">“If I fail, I fail.”</blockquote>
         <blockquote class="rail-quote">“There's always a lot of talk about the Franco-German partnership, yet relatively little actually happens.”</blockquote>
+        <blockquote class="rail-quote">“Why would they give it to a recently graduated PhD student?”</blockquote>
       </aside>
       </div>
 
       <div class="grid">
       <div class="feature-body">
-        <h4 class="qa-part">The research</h4>
+        <h4 class="qa-part">What they are working on</h4>
         <p class="qa-q">Where does an efficiency gain of that size actually come from?</p>
-        <p><strong>Chitta:</strong> There is no existing approach that gets us the gains we need; the research has to happen here. But there are three initial directions. First, simulation. Simulators turn compute into data. We aim to make them more useful and, at the same time, less compute-intensive. Those two usually pull against each other, which is exactly why it is research. Second, active on-policy data is worth far more per hour than passive logged data. Recorded human driving almost never shows a mistake being corrected; data collected by a policy while it is learning contains recovery. Third, inductive biases, introduced through the data pipeline rather than the architecture: you stage the training, with different types of data at different stages, analogous to how large language model pipelines are built.</p>
+        <p><strong>Chitta:</strong> We will need to do the research here; there is no existing approach that gets us the gains we need. However, we are working on some initial directions.</p>
+        <p>First, we believe in simulation. We aim to make simulators more useful and, at the same time, less compute-intensive. Those two usually pull against each other, which is exactly why it is research. Simulators turn compute into data, which gives us a scalable way to increase data quantity while keeping costs low.</p>
+        <p>Second, we believe that active on-policy data is worth far more per hour than the passive logged data that most physical AI efforts are collecting today. Recorded human driving almost never shows a mistake being corrected, because the driver rarely makes one, and never deliberately. On-policy data collected by a policy while it is learning contains recovery.</p>
+        <p>The third is inductive biases during learning. We favor introducing these into the model through the data pipeline rather than through architectures. Instead of hand-designing structure, you stage the training — different types of data at different stages, analogous to how large language model pipelines are built. This can significantly improve data and compute efficiency.</p>
 
-        <p class="qa-q">And what is being built right now?</p>
-        <p><strong>Jaeger:</strong> The first step is a very strong reinforcement-learning teacher model in self-play simulation; that's what I'm focusing on. Then we distill that teacher, which works on ground-truth perception, into an end-to-end model that works from sensor inputs, and do sim-to-real transfer to the real car. Right now everything is tested on driving. We say “physical AI” because the methods are generic, but driving is hard enough that we get a good signal.</p>
-        <p><strong>Geiger:</strong> The research vehicle that arrived in July is for small-scale data collection and closed-loop testing. We want to do 99% in simulation, but we always need real-world feedback, through our own car and through companies that give us access to their fleets. The first target is 30 kilometres between infractions, which the top labs can now achieve relatively easily. For us it's a new sensor setup, with much less data.</p>
+        <p class="qa-q">And in practice, what is being built right now?</p>
+        <p><strong>Jaeger:</strong> The first step is a very strong reinforcement-learning teacher model in self-play simulation — that's what I'm focusing on. Then we take that teacher, which is a privileged model working on ground-truth perception, and distill it into a full end-to-end model that works from sensor inputs. Once that's trained in simulation, we do sim-to-real transfer to the real car.</p>
+
+        <p class="qa-q">The lab talks about physical AI, but everything here is driving.</p>
+        <p><strong>Jaeger:</strong> Right now all our research directions are tested on the autonomous driving task. We put “physical AI” on it because we work on generic methods — they can also be applied to other robots. But we don't have the capacity to try and test on ten different robotics tasks. Driving is hard enough that we get a good signal.</p>
+
+        <p class="qa-q">And the research vehicle that arrived in July?</p>
+        <p><strong>Geiger:</strong> It's for small-scale data collection and closed-loop testing in the real world. We want to do 99% in simulation, but we always need the real-world feedback — through our own car, and through collaborations: a lot of companies are interested in giving us access to their fleet so we can test our algorithms on it, or giving us their data and opening it to the community together with us. The first target is a baseline of 30 kilometres between infractions, which the top labs can now achieve relatively easily. But for us, it's a new sensor setup, on which we're already a little out of domain, and with much less data.</p>
 
         <h4 class="qa-part">Why not a university, and why not a company</h4>
         <p class="qa-q">What can this lab do that a university group cannot?</p>
-        <p><strong>Geiger:</strong> Compute, of course. The university has a big cluster, but so many users that in the end you don't get the compute. Then, the classical PhD is very focused on the six-month publication cycle. Frontier AI needs multiple people, very focused, on something where publication is not the primary focus. The primary focus is to advance the frontier, and the publication is a byproduct. And at the university the postdoc salary is barely more than the PhD salary. We can't offer what US tech companies offer, but we are competitive enough that a larger fraction of our team can be permanent staff, including people dedicated to the hardware or the cluster.</p>
+        <p><strong>Geiger:</strong> Compute, of course — despite the university having a big cluster, there are so many users that in the end you don't get the compute.</p>
+        <p>Then, the classical PhD is very focused on the six-month publication cycle. That doesn't work so well with frontier AI, where you need multiple people, very focused, working on something where publication is not the primary focus — the primary focus is to advance the frontier, and the publication is a byproduct.</p>
+        <p>Third, at the university it's very difficult to hire postdocs, because the postdoc salary level is limited — barely more than the PhD salary. Most of the people we'd like to hire just prefer to go to US tech companies. Of course we don't provide the same benefits as they would get there, but we are competitive enough that a larger fraction of our team can be permanent staff rather than PhD students. It's also much easier for us to hire a scientific coordinator, or somebody dedicated to the hardware or the cluster, which we simply can't at the university.</p>
 
-        <p class="qa-q">And why not a for-profit?</p>
-        <p><strong>Jaeger:</strong> There are over a hundred companies working for-profit on self-driving. If I had made a new startup, I would have been the 101st, competing with Waymo and Tesla and already 10 to 15 years behind. If we want to achieve something that others haven't been able to achieve, we need to do something different, and that has to start at the structural level. As a non-profit, there's basically no competition. And it's okay to be late. DeepSeek gave the same performance as GPT-4 about a year later, and it was a big revolution because it was open, because it was free. If we are two years behind and we open something with Tesla-level performance, that still creates tremendous value.</p>
+        <p class="qa-q">And why not a for-profit? Why no compromise on the non-profit form?</p>
+        <p><strong>Jaeger:</strong> Why would I go with a compromise? There are over a hundred companies working for-profit to develop self-driving technology. If I had made a new startup, I would have been the 101st company trying to do this. If we want to achieve something that others haven't been able to achieve, we need to do something different — and I think that has to start at the structural level of the company.</p>
+        <p>If I start a new company now, I have to compete with Waymo, with Tesla, and I'm already 10 to 15 years behind. If we start a non-profit, there's basically no competition.</p>
+
+        <p class="qa-q">An open lab still competes with closed ones.</p>
+        <p><strong>Jaeger:</strong> Yes, but it's okay to be late. DeepSeek gave the same performance as GPT-4 about a year later. But it was a big revolution because it was open, because it was free. If we are two years behind and we open something with Tesla-level performance, that still creates tremendous value. Whereas if we build a closed project and we're two years behind, that's not going to create much value for humanity.</p>
+
+        <p class="qa-q">What does the non-profit status cost in practice?</p>
+        <p><strong>Geiger:</strong> It gives us a five-year plan — a longer plan than a for-profit has. But we are tax-exempt and need to be very careful not to lose that status: any activity that unilaterally benefits one partner or one company does not agree with the non-profit status. We can collaborate with academic partners, and with industry partners, as long as they subscribe — for that part of the collaboration — to the open science we ask them to subscribe to. We're also recognised as an official research and academic institution now.</p>
       </div>
       <aside class="article-rail">
+        <blockquote class="rail-quote">“We want to do 99% in simulation, but we always need the real-world feedback.”</blockquote>
         <blockquote class="rail-quote">“The primary focus is to advance the frontier, and the publication is a byproduct.”</blockquote>
-        <blockquote class="rail-quote">“If I had made a new startup, I would have been the 101st.”</blockquote>
+        <blockquote class="rail-quote">“If I had made a new startup, I would have been the 101st company trying to do this.”</blockquote>
       </aside>
       </div>
 
@@ -926,40 +956,50 @@
       <div class="grid">
       <div class="feature-body">
         <h4 class="qa-part">What “open” actually means</h4>
+        <p class="qa-q">What does being open cost? Does it stop you doing anything?</p>
+        <p><strong>Jaeger:</strong> For us, not really. We're funded by donations, so we don't need to make money. We can't work with some companies that want to keep everything secret. So we collaborate with the companies that are also doing open source, which is Valeo, NVIDIA and so on.</p>
+
         <p class="qa-q">Economically, why would giving everything away work?</p>
-        <p><strong>Chitta:</strong> End-to-end driving policies are extraordinarily expensive to train, which is why I think the best of them are closed. But a large part of the industry stands to gain immensely from a neutral, open stack. As we see with LLMs, smaller companies can build on open research instead of rebuilding it from nothing. And the team who did the original work can commercialize an open stack by delivering the most efficient implementation of it. That is an advantage you have to keep earning, which I think is healthy. So openness here is an accelerant.</p>
+        <p><strong>Chitta:</strong> End-to-end driving policies are extraordinarily expensive to train, which is why I think the best of them are closed. But there is a large proportion of the industry that stands to gain immensely from the availability of a neutral, open stack. Open-sourcing our findings, models and datasets changes who can participate. As we see with LLMs, smaller companies can build on open research instead of rebuilding it from nothing. And the team who did the original work can commercialize an open stack by being the ones who can deliver the most efficient, highest-throughput implementation of it. That is an advantage you have to keep earning, which I think is healthy.</p>
+        <p>So openness here is an accelerant. And it is not only about driving. If the tools are good enough to serve as a blueprint, other fields can pick them up — industrial robotics, construction, micromobility, and others.</p>
 
         <p class="qa-q">Who is the open stack for, once it exists?</p>
-        <p><strong>Geiger:</strong> It democratizes the technology. Robotaxis are more and more available, but there is no robotaxi in India, and the largest number of accidents and fatalities happens in India. And there are 200 car manufacturers, of which only a small fraction actually benefit from self-driving technology.</p>
-        <p><strong>Jaeger:</strong> All the good self-driving software is in extremely premium cars. One hope I have is that open-sourcing gets this technology into lower-end cars as well.</p>
-        <p><strong>Chitta:</strong> There is also a technical reason: if you want something that generalizes, you need data from places where traffic behaves differently.</p>
+        <p><strong>Geiger:</strong> It democratizes the technology. Think about robotaxis: they're more and more available, but there is no robotaxi in India — and the largest number of accidents and fatalities happens in India. The technology is unequally distributed over the world. And there are 200 car manufacturers, of which only a small fraction actually benefit from self-driving technology.</p>
+        <p><strong>Jaeger:</strong> All the good self-driving software is in extremely premium cars. So one hope I have is that open-sourcing everything we can gets this technology into lower-end cars as well, because software has a much lower total cost of ownership.</p>
+        <p><strong>Chitta:</strong> There is also a technical reason to care about the rest of the world, not only an ethical one: if you want something that generalizes, you need data from places where traffic behaves differently. Having an open stack incentivizes deployments in places which could provide data that is far more valuable than collecting more from existing deployments.</p>
 
         <h4 class="qa-part">The first months</h4>
         <p class="qa-q">What has founding an institution actually consumed?</p>
-        <p><strong>Geiger:</strong> Mostly I have one hour to do actual work, and the remaining seven hours are the rest. It took us six weeks to set up a bank account: maybe fifty emails and ten meetings, just for a bank account. Then insurance, the legal structure, audits. A non-profit is much more complex than a standard for-profit startup. And hiring is very time-intensive: if you just do interviews for three months, you don't get any work done.</p>
-        <p class="qa-note"><em>Update, October: “This has changed now. I do 50/50, and I actually have much more time to work on the methods myself, which is a lot of fun.”</em></p>
-        <p><strong>Jaeger:</strong> My first three months went mostly into the compute cluster. We rent compute for this year, because building up a cluster takes time, and for next year we've ordered GPUs to co-locate in a data centre. Now that's over, and we've done some hiring, so I have much more time for actual research.</p>
-        <p><strong>Chitta:</strong> There are around ten projects running, and much of my job is to be the bridge between them. I'm also starting as a Principal Investigator at ELLIS, where the world models developed at KE:SAI can be tested on new domains.</p>
+        <p><strong>Geiger:</strong> Currently, I mostly have one hour to do actual work, and the remaining seven hours are the rest. It took us six weeks to set up a bank account — we wrote maybe fifty emails and had ten meetings, just to set up a bank account. And there are many of these things: insurance, all the legal stuff. A non-profit is also much more complex than a for-profit — you need audits and all the legal structure in place.</p>
+        <p>Hiring is very time-intensive. If you just do interviews for three months, you don't get any work done. So you need to think: do you want to hire, or do you want to work?</p>
+        <p class="qa-note"><em>Update, October: “This has changed. I do 50/50 now. And I do have actually much more time to work on the methods myself, which is a lot of fun.”</em></p>
+        <p><strong>Jaeger:</strong> The beginning was just organisational. I took responsibility for the compute cluster and the infrastructure. What we ended up doing is renting compute for a year — when you buy a cluster it takes time to build it up, so renting is the only way to get it fast. And for next year we've ordered GPUs to build our own and co-locate them in a data centre. It consumed most of my time in the first three months. But now that's over, and we've done some hiring, so I have much more time for actual research.</p>
+
+        <p class="qa-q">What does the structure look like inside?</p>
+        <p><strong>Jaeger:</strong> We have a flat hierarchy. Everyone's opinion matters, from undergraduate intern to permanent staff. Important strategic decisions are made jointly by the co-founders.</p>
+        <p><strong>Chitta:</strong> There are around ten projects running, and much of my job is to be the bridge between them. We generally collaborate with other groups doing great open science, and aim to publish longer-term, high-impact results. I am also starting as a Principal Investigator at ELLIS, where the world models developed at KE:SAI, and the technical know-how on how they are built, can be tested on new domains.</p>
       </div>
       <aside class="article-rail">
-        <blockquote class="rail-quote">“It took us six weeks to set up a bank account.”</blockquote>
         <blockquote class="rail-quote">“There is no robotaxi in India.”</blockquote>
+        <blockquote class="rail-quote">“It took us six weeks to set up a bank account.”</blockquote>
+        <blockquote class="rail-quote">“Do you want to hire, or do you want to work?”</blockquote>
       </aside>
       </div>
 
       <div class="grid">
       <div class="feature-body">
         <h4 class="qa-part">What comes next</h4>
-        <p class="qa-q">What does the coming year look like?</p>
-        <p><strong>Geiger:</strong> Collaborations with external partners that we've started recently: NVIDIA, Valeo and NYU, among others. They have their own engineers and fleets, so we get feedback on what needs to change in our policies. And along the way we want to raise more funding, so we can expand.</p>
+        <p class="qa-q">What does the coming year look like concretely?</p>
+        <p><strong>Geiger:</strong> In the collaborations with external partners that we have been starting recently — NVIDIA, Valeo and NYU, amongst others — they have their own engineers and AI teams. We can't put our technology on their fleet ourselves, so we rely on their people, but we get the feedback on what needs to change and how to improve our policies. And along the way we also want to collect more funding, so we can expand.</p>
 
         <p class="qa-q">The lab is built around a CEO who has said he will eventually step back. What does that do to it?</p>
-        <p><strong>Geiger:</strong> It's not completely determined how long I stay full-time. At least a year, maybe five. Once the organisation runs smoothly, an external hire can take care of the administrative side, and my role would be more on the scientific side again. I'll always be involved, at least 20%. At the moment I see myself as a catalyst.</p>
-        <p><strong>Jaeger:</strong> What matters is that Andreas is here right now as a full-time CEO. Without him we wouldn't be able to hire this world-class talent. A year from now, at 20%, it doesn't risk the life of KE:SAI.</p>
+        <p><strong>Geiger:</strong> It's not completely determined how long I stay here full-time. At least a year, maybe five. Once the organisation runs smoothly, it's okay to have an external hire who primarily takes care of the administrative side, and my role would be more on the scientific side again — I'll always be involved, at least 20%, even in the long term. At the moment I see myself as a catalyst, to set it up.</p>
+        <p><strong>Jaeger:</strong> The administrative work is going to wind down rapidly now. What matters is that Andreas is here right now as a full-time CEO — if we didn't have him, we wouldn't be able to hire this world-class talent. A year from now, at 20%, it doesn't risk the life of KE:SAI.</p>
 
-        <p class="qa-q">And if it works? What happens to the technology then?</p>
-        <p><strong>Geiger:</strong> Even when the technology is ripe, there's still a large gap from research to commercialization: legislation, depots, maintenance, ride-hailing apps. That could be done by companies in-house, or by a translational for-profit spun off from us. kyutai, our mother company in a way, has already done this: they developed audio technology as an open-science lab, then spun off Gradium late last year, with a $70 million seed round.</p>
-        <p><strong>Jaeger:</strong> The important part is that KE:SAI doesn't own IP. We don't have patents. We open-source the software, so anybody can do the same thing.</p>
+        <p class="qa-q">And if it works? Say the technology is there — what happens to it then?</p>
+        <p><strong>Geiger:</strong> Even when the technology is ripe, there's still a large gap from research to commercialization. That could be done by the companies in-house, or by some translational company — a for-profit that takes our technology, which could be spun off from us, or an external entity we collaborate closely with. There are all these additional questions: legislation, and for fleets, depots, maintenance, ride-hailing apps. That's not our focus. Our focus is the core technology, pushing it as far as possible in the open space.</p>
+        <p>kyutai — our mother company, in a way — has already instantiated this. They call it the “fluid model.” They developed audio technology as an open-science lab, then spun off Gradium in November or December last year, with a $70 million seed round, to commercialize the technology. There's even the possibility for employees to work half-time in the for-profit and half-time in the non-profit.</p>
+        <p><strong>Jaeger:</strong> The important part is that KE:SAI doesn't own IP. We have no legal advantage over anybody else doing this. We don't have patents. We open-source the software, so anybody can do the same thing.</p>
 
         <p class="qa-q">And the lab itself, in that scenario?</p>
         <p><strong>Geiger:</strong> The research entity should still exist, because it needs to focus on the next research challenges. There is a large number of important problems that society has to tackle in the next decades. Research organizations like ours are ideally suited to do so.</p>
@@ -968,6 +1008,7 @@
       </div>
       <aside class="article-rail">
         <blockquote class="rail-quote">“At the moment I see myself as a catalyst.”</blockquote>
+        <blockquote class="rail-quote">“Our focus is the core technology, pushing it as far as possible in the open space.”</blockquote>
       </aside>
       </div>
 
