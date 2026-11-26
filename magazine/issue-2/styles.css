@@ -3105,6 +3105,23 @@ a.feedback-way-link:hover { color: var(--accent-deep); }
   .photo-gallery { grid-template-columns: 1fr; }
 }
 
+/* ---- Photo of the Season: the winner, the runners-up, the next vote ---- */
+.ph-3-4 { aspect-ratio: 3 / 4; }
+.ph-2-3 { aspect-ratio: 2 / 3; }
+.season-lede { max-width: 46em; }
+.collage-fig { margin: -20px 0 0; }
+.collage {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+@media (max-width: 620px) {
+  .collage { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+/* the vote button waits for its form link */
+.btn-vote:not([href]) { opacity: 0.5; cursor: not-allowed; }
+.btn-vote:not([href]):hover { background: var(--accent-deep); color: var(--paper); }
+
 
 /* ==========================================================================
    Issue 02 additions
