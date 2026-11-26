@@ -3120,6 +3120,7 @@ a.feedback-way-link:hover { color: var(--accent-deep); }
 }
 /* the vote button waits for its form link */
 .btn-vote:not([href]) { opacity: 0.5; cursor: not-allowed; }
+.poll-cta-after { margin-top: 30px; }
 .btn-vote:not([href]):hover { background: var(--accent-deep); color: var(--paper); }
 
 
