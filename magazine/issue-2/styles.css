@@ -3213,6 +3213,9 @@ a.feedback-way-link:hover { color: var(--accent-deep); }
 .brief dd { margin: 3px 0 0; color: var(--ink); }
 .brief a { color: var(--accent); }
 
+/* ---- German Postdoc Network survey: a notice, set apart from our own survey ---- */
+.postdoc-survey-links { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-bottom: 0 !important; }
+
 /* ---- survey method note ---- */
 .method-note {
   margin: 40px 0 0;
@@ -3332,23 +3335,7 @@ a.feedback-way-link:hover { color: var(--accent-deep); }
 }
 
 /* ---- cover: the second headline story gets a feature slot ---- */
-.teaser-feature {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 0 20px;
-  align-items: start;
-  padding-bottom: 20px;
-}
-.teaser-stat {
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 0.85;
-  color: var(--mint);
-  font-variant-numeric: lining-nums;
-  white-space: nowrap;
-}
-.teaser-stat-of { font-size: 0.42em; font-weight: 500; color: rgba(255, 255, 255, 0.7); margin-left: 2px; }
+.teaser-feature { padding-bottom: 20px; }
 .teaser-feature .teaser-title { font-size: 26px; font-weight: 600; margin-bottom: 6px; }
 .teaser-feature .teaser-blurb { font-size: 13.5px; }
 .teaser-more {
@@ -3364,6 +3351,5 @@ a.feedback-way-link:hover { color: var(--accent-deep); }
 .teaser-feature:hover .teaser-more,
 .teaser-feature:focus-visible .teaser-more { color: #fff; }
 @media (max-width: 620px) {
-  .teaser-stat { font-size: 48px; }
   .teaser-feature .teaser-title { font-size: 22px; }
 }
