@@ -3216,6 +3216,42 @@ a.feedback-way-link:hover { color: var(--accent-deep); }
 /* ---- German Postdoc Network survey: a notice, set apart from our own survey ---- */
 .postdoc-survey-links { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-bottom: 0 !important; }
 
+/* ---- Culture: where to start, one card per kind of club ---- */
+.clubs-head { margin-top: 48px; }
+.clubs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 14px;
+}
+.club {
+  background: var(--warm);
+  border-top: 3px solid var(--accent);
+  padding: 20px 22px 18px;
+}
+.chapter-warm .club { background: var(--paper); }
+.club-name {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0 0 10px;
+}
+.club p { font-size: 15.5px; line-height: 1.6; color: var(--body-ink); margin: 0 0 12px; }
+.club p:last-child { margin-bottom: 0; }
+.club a { color: var(--accent-deep); }
+.clubs-more {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted-2);
+  margin: 18px 0 0;
+}
+.clubs-more a { color: var(--accent); font-weight: 700; }
+@media (max-width: 720px) {
+  .clubs { grid-template-columns: 1fr; }
+}
+
 /* ---- survey method note ---- */
 .method-note {
   margin: 40px 0 0;
