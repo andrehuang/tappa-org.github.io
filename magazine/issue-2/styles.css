@@ -3105,10 +3105,10 @@ a.feedback-way-link:hover { color: var(--accent-deep); }
   .photo-gallery { grid-template-columns: 1fr; }
 }
 
-/* ---- Photo of the Season: the winner, the runners-up, the next vote ---- */
+/* ---- Photo of the Quarter: the winner, the runners-up, the next vote ---- */
 .ph-3-4 { aspect-ratio: 3 / 4; }
 .ph-2-3 { aspect-ratio: 2 / 3; }
-.season-lede { max-width: 46em; }
+.photo-lede { max-width: 46em; }
 .collage-fig { margin: -20px 0 0; }
 .collage {
   display: grid;
